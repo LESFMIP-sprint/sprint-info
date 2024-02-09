@@ -1,31 +1,36 @@
-# Home 
+# About 
 
-As part of the CANARI () project a large ensemble of the HadGEM3 coupled climate model is being run.  This page is designed to provide details of the ensemble (below), how to access the data, any events and highlights.  
+As part of the [CANARI](https://ncas.ac.uk/our-science/long-term-collaborations/canari/) (Climate change in the Arctic – North Atlantic region and impacts on the UK) project a large ensemble of the HadGEM3 coupled climate model is being run.  This page is designed to provide details of the ensemble (below), information about the [data](data.md) and how to access, any events (e.g. [March 2024 Sprint](sprint.md)), [highlights](highlights.md) and [frequently asked questions](FAQ.md).  
 
-## Model Details
+## Ensemble Details 
 
-HadGEM3-GC1.3-MM
+Need to verify/look up these details and add references
 
-## Current State of Ensemble
+Model: HadGEM3-GC1.3-MM, same configuration as used in CMIP6, global configuration version 3.1
 
-![Project Schema](assets/project_schema.png)
+Ocean: NEMO3.6
 
+Atmosphere: UM
 
-Bullet points:
+Sea Ice: CICE
 
-- AAA
-- BBB
+Land: Jules
 
-## Prototype
+40 historical (1950-2014) ensemble members
 
-Some Links
+40 future projection, SSP3-7.0 (2015-2100) ensemble members 
 
-- [Cloud Optimized GeoTIFF](cog.md)
+## State of Ensemble
 
-- [MBTiles](mbtiles.md)
+Currently running historical simulations, with approximately 25 ensemble members complete and 15 running.  Detailed information on the state of the ensemble can be found [here](https://gws-access.jasmin.ac.uk/public/canari/production/canari-le-production-status.html).
 
-- [WMS Layers](wms.md)
+An example set of data is currently uploaded onto and priority variables are in process of being downloaded from tape to JASMIN.
 
-- [Cesium Ion](cesium_ion.md)
+## How to cite
 
-- [CSV - Organisms Annotation](photos.md)
+There is no specific paper yet on the large ensemble, so please reference the HadGEM3.1 paper and acknowledge CANARI and JASMIN.
+
+## Publications
+
+Soon :)
+
