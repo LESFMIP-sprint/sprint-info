@@ -1,6 +1,6 @@
 # About 
 
-As part of the [CANARI](https://ncas.ac.uk/our-science/long-term-collaborations/canari/) (Climate change in the Arctic – North Atlantic region and impacts on the UK) project a large ensemble of the HadGEM3 coupled climate model is being run.  This page is designed to provide details of the ensemble (below), information about the [data](data.md) and how to access, any events (e.g. [March 2024 Sprint](sprint.md)), [highlights](highlights.md) and [frequently asked questions](FAQ.md).  
+As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Arctic – North Atlantic region and impacts on the UK) project a large ensemble of the HadGEM3 coupled climate model is being run, [CANARI-LE](https://canari.ac.uk/resources_new/tools/).  A data analysis sprint is planned for the week of March 4-8, 2024 to get a jump start on the analysis of the data being generated.  This page is designed to provide details of the ensemble, information about the [data and how to access](data.md), [pre-event requirements](setup.md), [sprint](sprint.md), [tutorials](tutorials.md) and [frequently asked questions](FAQ.md).  
 
 ## Ensemble Details 
 
@@ -29,6 +29,10 @@ An example set of data is currently uploaded onto and priority variables are in 
 ## How to cite
 
 There is no specific paper yet on the large ensemble, so please reference the HadGEM3.1 paper and acknowledge CANARI and JASMIN.
+
+## Highlights
+
+Figures, animations and anything else cool
 
 ## Publications
 

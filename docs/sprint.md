@@ -1,7 +1,11 @@
-# Sprint March 2024
+# Sprint
+
+The sprint will take place March 4-8, 2024
 
 About the CANARI Sprint
 
-## Definition
+## Schedule
 
-Definition
+Monday March 4, 2024
+
+
