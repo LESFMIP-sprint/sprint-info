@@ -51,10 +51,13 @@
                                 <a href="../data/" class="nav-link">Data</a>
                             </li>
                             <li class="navitem">
-                                <a href="../sprint/" class="nav-link">Sprint March 2024</a>
+                                <a href="../setup/" class="nav-link">Pre-event</a>
                             </li>
                             <li class="navitem">
-                                <a href="../highlights/" class="nav-link">Highlights</a>
+                                <a href="../sprint/" class="nav-link">Sprint</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../tutorials/" class="nav-link">Tutorials</a>
                             </li>
                             <li class="navitem">
                                 <a href="../FAQ/" class="nav-link">FAQ</a>
@@ -95,17 +98,22 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="0"><a href="#sprint" class="nav-link">3. Sprint March 2024</a>
+            <li class="nav-item" data-level="0"><a href="#setup" class="nav-link">3. Pre-event</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="0"><a href="#highlights" class="nav-link">4. Highlights</a>
+            <li class="nav-item" data-level="0"><a href="#sprint" class="nav-link">4. Sprint</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="0"><a href="#faq" class="nav-link">5. FAQ</a>
+            <li class="nav-item" data-level="0"><a href="#tutorials" class="nav-link">5. Tutorials</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="0"><a href="#faq" class="nav-link">6. FAQ</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -123,9 +131,15 @@
             </div>
         </section>
         <section class="print-page" id="index"><h1 id="index-about">About</h1>
-<p>As part of the <a href="https://canari.ac.uk/">CANARI project</a> (Climate change in the Arctic – North Atlantic region and impacts on the UK) project a large ensemble of the HadGEM3 coupled climate model is being run, <a href="https://canari.ac.uk/resources_new/tools/">CANARI-LE</a>.  This page is designed to provide details of the ensemble (below), information about the <a href="#data">data</a> and how to access, any events (e.g. <a href="#sprint">March 2024 Sprint</a>), <a href="#highlights">highlights</a> and <a href="#faq">frequently asked questions</a>.  </p>
-<h2 id="index-ensemble-details">Ensemble Details</h2>
-<p>Need to verify/look up these details and add references</p>
+<p>As part of the <a href="https://canari.ac.uk/">CANARI project</a> (Climate change in the Arctic – North Atlantic region and impacts on the UK) project a large ensemble of the HadGEM3 coupled climate model is being run, <a href="https://canari.ac.uk/resources_new/tools/">CANARI-LE</a>.  A data analysis sprint is planned for the week of March 4-8, 2024 to get a jump start on the analysis of the data being generated.  This page is designed to provide details of the ensemble, information about the <a href="#data">data and how to access</a>, <a href="#setup">pre-event requirements</a>, <a href="#sprint">sprint</a>, <a href="#tutorials">tutorials</a> and <a href="#faq">frequently asked questions</a>.  </p>
+<h2 id="index-highlights">Highlights</h2>
+<p>Figures, animations and anything else cool to come soon.  In the meantime:</p>
+<p><img alt="Sea Surface Temperature" src="../assets/sst.png" />
+Annual Mean Sea Surface Temperature for 1950 in ensemble member 1</p>
+<h2 id="index-publications">Publications</h2>
+<p>Soon :)</p></section><section class="print-page" id="data"><h1 id="data-data">Data</h1>
+<p>The CANARI-LE is currently being run on ARCHER2 with data being stored on tape on JASMIN with some data being stored in the CANARI group workspace (gws).</p>
+<h2 id="data-ensemble-details">Ensemble Details</h2>
 <p>Model: HadGEM3-GC1.3-MM, same configuration as used in CMIP6, global configuration version 3.1</p>
 <p>Ocean: NEMO3.6</p>
 <p>Atmosphere: UM</p>
@@ -133,27 +147,110 @@
 <p>Land: Jules</p>
 <p>40 historical (1950-2014) ensemble members</p>
 <p>40 future projection, SSP3-7.0 (2015-2100) ensemble members </p>
-<h2 id="index-state-of-ensemble">State of Ensemble</h2>
+<h2 id="data-state-of-ensemble">State of Ensemble</h2>
 <p>Currently running historical simulations, with approximately 25 ensemble members complete and 15 running.  Detailed information on the state of the ensemble can be found <a href="https://gws-access.jasmin.ac.uk/public/canari/production/canari-le-production-status.html">here</a>.</p>
-<p>An example set of data is currently uploaded onto and priority variables are in process of being downloaded from tape to JASMIN.</p>
-<h2 id="index-how-to-cite">How to cite</h2>
-<p>There is no specific paper yet on the large ensemble, so please reference the HadGEM3.1 paper and acknowledge CANARI and JASMIN.</p>
-<h2 id="index-publications">Publications</h2>
-<p>Soon :)</p></section><section class="print-page" id="data"><h1 id="data-data">Data</h1>
-<p>About the CANARI Sprint</p>
-<h2 id="data-definition">Definition</h2>
-<p>Definition</p></section><section class="print-page" id="sprint"><h1 id="sprint-sprint-march-2024">Sprint March 2024</h1>
-<p>The sprint will take place March 4-8, 2024</p>
-<p>About the CANARI Sprint</p>
+<p>An example set of data is currently uploaded onto the CANARI gws (/gws/nopw/j04/canari/users/reinhard/data/u-cy573-sample) and priority variables are in process of being downloaded from tape to JASMIN.</p>
+<h2 id="data-data-access">Data Access</h2>
+<p>To access the CANARI-LE data available on JASMIN you need to apply for access to the CANARI gws through the <a href="https://accounts.jasmin.ac.uk/">JASMIN accounts portal</a> under the my services button.</p>
+<p>Priority variables from the CANARI-LE are uploaded onto JASMIN here:  /gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2 </p>
+<p>The list of data requests can be found on google drive <a href="https://drive.google.com/drive/folders/12CXfpZdFQDTLTi57ROw3VucY_-nozm-b">here</a>.</p>
+<p>Further data can be downloaded...  (info coming soon)</p>
+<h2 id="data-how-to-cite">How to cite</h2>
+<p>There is no specific paper yet on the large ensemble, so please reference the HadGEM3.1 paper (<a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017MS001115">Williams et al. 2017</a>) and acknowledge CANARI and JASMIN.</p></section><section class="print-page" id="setup"><h1 id="setup-pre-event">Pre-event</h1>
+<p>This page contains all the pre-event setup required to prepare you to make the most of the event.  New items may appear on the list as the event gets closer.</p>
+<ol>
+<li>
+<p>Sign-up for the event to make sure you are kept in the loop with the last information and see potential collaborators in on the <a href="https://docs.google.com/spreadsheets/d/1wfX17IQq4rdrSUl1sgKYj2pUmV_pl8qZBRGgCsq_x1U/edit#gid=0">spreadsheet</a>.</p>
+</li>
+<li>
+<p>Slack Workspace</p>
+<ol>
+<li>
+<p>Make sure you can sign into the CANARI Slack workspace.  If you don't have access to the CANARI slack space please contact Ben Harvey () or Jenny Mecking (jmecki@noc.ac.uk) to send you an invite.</p>
+</li>
+<li>
+<p>Join the appropriate channels on the CANARI Slack workspace, all channels relevant to the sprint will be prefaced with the word 'sprint'.  There are channels setup where you can get help for the sprint which will be monitored, they will be labeled starting 'sprint-help'.</p>
+</li>
+<li>
+<p>Feel free to add channels to help collaborate your analysis during the sprint and make sure to label them with 'sprint'.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>JASMIN - keep in mind it might take a few days to get your accounts approved</p>
+<ol>
+<li>
+<p>Make sure you have a JASMIN account.  If you are new to JASMIN please mention the CANARI-LE sprint in your application. Instructions on signing up for an account can be found <a href="https://help.jasmin.ac.uk/article/4435-get-a-jasmin-account">here</a>.  If you are only planning on using JASMIN for the sprint and don't have an account please contact Jenny and a temporary account can be setup.</p>
+</li>
+<li>
+<p>Sign-up for the required JASMIN services through the <a href="https://accounts.jasmin.ac.uk/">accounts portal</a>.</p>
+<ol>
+<li>
+<p>Jasmin log-in account</p>
+</li>
+<li>
+<p>CANARI group workspace (gws)</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Email Jenny Mecking (jmecki@noc.ac.uk) your JASMIN user ID, this will be shared with people at JASMIN</p>
+</li>
+<li>
+<p>(optional) Link your JASMIN account with a CEDA account.  This will provide you with access to several datasets including ERA5 and CMIP data.</p>
+</li>
+<li>
+<p>(optional) Set-up symbolic links to the CANARI gws to make it easier to find</p>
+</li>
+</ol>
+</li>
+<li>
+<p>ZOOM - communication during the sprint will be done via zoom, please make sure you are able to connect</p>
+</li>
+<li>
+<p>Plan your analysis</p>
+<ol>
+<li>
+<p>Several work packages have been actively making plans on what they would like to do.  If you are unsure of what analysis you are planning on doing in the first instance speak with your work package leader and/or centre lead (you can see who this is in the sign-up spread sheet).  If that fails contact someone from the signup spreadsheet with similar interests to you.</p>
+</li>
+<li>
+<p>Take a look at the sample data on JASMIN to make sure the data you want to work with is there and looks correct.  The sample data can be found here:  </p>
+</li>
+</ol>
+</li>
+<li>
+<p>Shared datasets and shared analysis</p>
+<ol>
+<li>
+<p>If you want to use any observation based dataset or other to compare the data from the CANARI-LE or already have dowloaded some datasets please fill in this spreadsheet (still to come).</p>
+</li>
+<li>
+<p>If you are planning on doing, would like to use or have already done some analysis that might be useful for multiple people (e.g. computing the Atlantic Multi-decadal Variability (AMV) or computing jet stream latitudes) please fill in this spreadsheet (still to come).</p>
+</li>
+</ol>
+</li>
+</ol></section><section class="print-page" id="sprint"><h1 id="sprint-sprint">Sprint</h1>
+<p>The sprint will take place March 4-8, 2024 as a hybrid sprint, with each participating centre working together and then connecting to each other via zoom.  The goal of the sprint is to work together to kickstart analysis on the CANARI-LE data.</p>
 <h2 id="sprint-schedule">Schedule</h2>
-<p>Monday March 4, 2024</p>
-<p>Definition</p></section><section class="print-page" id="highlights"><h1 id="highlights-highlights">Highlights</h1>
-<p>About the CANARI Sprint</p>
-<h2 id="highlights-definition">Definition</h2>
-<p>Definition</p></section><section class="print-page" id="faq"><h1 id="faq-faq">FAQ</h1>
-<p>About the CANARI Sprint</p>
-<h2 id="faq-definition">Definition</h2>
-<p>Definition</p></section></div></div>
+<p>Details subject to change!</p>
+<h2 id="sprint-march-4-2024">March 4, 2024:</h2>
+<p>10:00-10:15: Good morning</p>
+<p>10:15-10:30: Introductions</p>
+<p>10:30-10:45: House Keeping</p>
+<p>10:45-11:15: CANARI-LE overview (Reinhard)</p>
+<p>11:30-12:30: open video chat for help getting onto JASMIN and jupyter notebooks</p>
+<p>14:00-16:00: guided tutorial of example python scripts</p>
+<p>16:30-17:00:  highlights of the day</p>
+<h2 id="sprint-march-567-2024">March 5,6,7, 2024:</h2>
+<p>10:00-10:30:  Good morning and sharing of known issues and good to knows</p>
+<p>16:30-17:00:  highlights of the day</p>
+<h2 id="sprint-march-8-2024">March 8, 2024:</h2>
+<p>10:00-10:30:  Good morning and sharing of known issues and good to knows</p>
+<p>16:00-17:00:  highlights of the week</p></section><section class="print-page" id="tutorials"><h1 id="tutorials-tutorials">Tutorials</h1>
+<p>Some simple python tutorials to get you started analysing the CANARI-LE on JASMIN.</p>
+<h2 id="tutorials-tutorial-1">Tutorial 1</h2>
+<p>TBD</p></section><section class="print-page" id="faq"><h1 id="faq-faq">FAQ</h1>
+<p>Questions to come</p></section></div></div>
             </div>
         </div>
 
