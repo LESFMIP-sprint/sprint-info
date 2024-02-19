@@ -38,6 +38,6 @@ This page contains all the pre-event setup required to prepare you to make the m
 
 6.  Shared datasets and shared analysis
 
-    1. If you want to use any observation based dataset or other to compare the data from the CANARI-LE or already have dowloaded some datasets please fill in this spreadsheet (still to come).
+    1. If you want to use any observation based dataset or other to compare the data from the CANARI-LE or already have dowloaded some datasets please fill in this [spreadsheet](https://docs.google.com/spreadsheets/d/10T_VkuiszrUwWMmDl8TxcSI5vdEQnf1Z/edit?pli=1#gid=1315481671).
 
     2. If you are planning on doing, would like to use or have already done some analysis that might be useful for multiple people (e.g. computing the Atlantic Multi-decadal Variability (AMV) or computing jet stream latitudes) please fill in this spreadsheet (still to come).
