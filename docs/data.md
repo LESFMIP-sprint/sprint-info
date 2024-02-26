@@ -18,21 +18,19 @@ Land: Jules
 
 40 future projection, SSP3-7.0 (2015-2100) ensemble members 
 
+More information on the CANARI-LE can be found [here](https://ncas-cms.github.io/canari/).
+
 ## State of Ensemble
 
-Currently running historical simulations, with approximately 25 ensemble members complete and 15 running.  Detailed information on the state of the ensemble can be found [here](https://gws-access.jasmin.ac.uk/public/canari/production/canari-le-production-status.html).
-
-An example set of data is currently uploaded onto the CANARI gws (/gws/nopw/j04/canari/users/reinhard/data/u-cy573-sample) and priority variables are in process of being downloaded from tape to JASMIN.
+Currently running historical simulations, with 27 ensemble members completed and 13 running.  Detailed information on the state of the ensemble can be found [here](https://gws-access.jasmin.ac.uk/public/canari/production/canari-le-production-status.html).
 
 ## Data Access
 
 To access the CANARI-LE data available on JASMIN you need to apply for access to the CANARI gws through the [JASMIN accounts portal](https://accounts.jasmin.ac.uk/) under the my services button.
 
-Priority variables from the CANARI-LE are uploaded onto JASMIN here:  /gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2 
+An example set of data is currently uploaded onto the CANARI gws (/gws/nopw/j04/canari/users/reinhard/data/u-cy573-sample) and priority variables are in process of being downloaded from tape to JASMIN (/gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2).
 
-The list of data requests can be found on google drive [here](https://drive.google.com/drive/folders/12CXfpZdFQDTLTi57ROw3VucY_-nozm-b).
-
-Further data can be downloaded...  (info coming soon)
+The list of priority variables are on these [spreadsheets](https://drive.google.com/drive/folders/12CXfpZdFQDTLTi57ROw3VucY_-nozm-b).
 
 ## How to cite
 
