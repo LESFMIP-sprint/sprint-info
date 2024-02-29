@@ -32,6 +32,10 @@ An example set of data is currently uploaded onto the CANARI gws (/gws/nopw/j04/
 
 The list of priority variables are on these [spreadsheets](https://drive.google.com/drive/folders/12CXfpZdFQDTLTi57ROw3VucY_-nozm-b).
 
+## Useful Files
+
+For the ocean the mesh_mask and subbasins files can be found in the CANARI gws here /gws/nopw/j04/canari/shared/large-ensemble/ocean
+
 ## How to cite
 
 There is no specific paper yet on the large ensemble, so please reference the HadGEM3.1 paper ([Williams et al. 2017](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017MS001115)) and acknowledge CANARI and JASMIN.
