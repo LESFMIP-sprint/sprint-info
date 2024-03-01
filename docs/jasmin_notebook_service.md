@@ -1,4 +1,4 @@
-## Tutorial 2 - Configuring and Using the JASMIN Notebooks Service
+## Configuring and Using the JASMIN Notebooks Service
 
 ### Logging into the JASMIN Notebook Service
 
