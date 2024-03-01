@@ -11,6 +11,7 @@ Your JASMIN home directory and group workspaces will be accessible from within t
 
 ### Setting up the CANARI Conda Environment
 We have preconfigured a CANARI conda environment for you to use. This contains many (but perhaps not all) of the packages you are likely to need. It is built using the environment.yml file that can be found in the [CANARI tutorials github](https://github.com/CANARI-sprint/tutorials/blob/main/environment.yml). The environment is located on the Group Work Space under the path `/gws/smf/j04/canari/conda-env`, because it is held in a non-standard location your Jupyter notebooks won't find it automatically. In order to use it do the following:
+
 * From the Jupyter launcher click on the terminal icon
 * Type: `conda run -p /gws/smf/j04/canari/conda-env python -m ipykernel install --user --name CANARI` and press enter
 * Open a new Jupyter launcher by clicking on File and then New Launcher
