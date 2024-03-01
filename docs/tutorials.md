@@ -5,6 +5,8 @@ Some simple tutorials to get you started analysing the CANARI-LE.
 - [Git Setup and Basics](github.md)
 
 - [Configuring and Using the JASMIN Notebooks Service](jasmin_notebook_service.md)
+  
+- [Creating and Using your Own Conda/Mamba Enviroment](creating_your_own_conda_env.md)
 
 - **Data Analysis Guides:** Access our data analysis guides hosted on the [tutorials repository](https://github.com/CANARI-sprint/tutorials).
 
