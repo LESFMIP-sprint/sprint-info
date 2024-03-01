@@ -17,16 +17,20 @@ We have preconfigured a CANARI conda environment for you to use. This contains m
 * There should now be a notebook and console option called CANARI, although this can take around one minute to appear.
 
 ### Getting the CANARI example code
-1. Click on the Git menu and choose "Clone a repo" ![Screenshot of the Jupyter Git Menu](assets/jupyter-git-menu.png). Make sure you are in your home directory by clicking on the folder icon in the file browser on the left side of the screen. ![Screenshot of the Jupyter home directory icon](assets/jupyter-homefolder.png)
-2. Enter https://github.com/CANARI-sprint/tutorials as the URI of the remote Git repository. ![Screenshot of entering the URI](assets/jupyter-git-repo-uri.png)
-3. Click Clone
+First ensure you are in your home directory by clicking on the folder icon in the file browser on the left side of the screen. 
+
+![Screenshot of the Jupyter home directory icon](assets/jupyter-homefolder.png)
+
+2. Click on the Git menu and choose "Clone a repo" ![Screenshot of the Jupyter Git Menu](assets/jupyter-git-menu.png)
+3. Enter https://github.com/CANARI-sprint/tutorials as the URI of the remote Git repository. ![Screenshot of entering the URI](assets/jupyter-git-repo-uri.png)
+4. Click Clone
 
 This will create a copy of the repository from https://github.com/CANARI-sprint/tutorials into your JASMIN home directory.
 
 ### Open and run an example notebook
 1. Click on the tutorials folder that contains your clone of the github repository. 
-2. Open the notebooks folder and then the general folder.
-3. Choose the zarr_files.ipynb notebook 
+2. Open the notebooks folder.
+3. Choose the 1_basic_manipulation.ipynb notebook 
 4. If you are asked which kernel you would like to use choose the CANARI kernel. ![Jupyter kernel choice screen](assets/jupyter-kernel-choice-2.png)
 5. Test the notebook can run by clicking on the Run menu and choosing "Run all cells" or going through each cell one by one and clicking the play button. 
 
