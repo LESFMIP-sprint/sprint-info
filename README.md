@@ -1,7 +1,7 @@
-# HAIG FRAS PROJECT DOCUMENTATION
+# CANARI Sprint DOCUMENTATION
 ====================
 
-This project represents the documentation for the Digital Twin project for Haig-Fras.
+This project represents the documentation for the CANARA Sprint.
 
 It was assembled based on the mkdocs package.
 
