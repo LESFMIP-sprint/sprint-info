@@ -8,6 +8,8 @@ Some simple tutorials to get you started analysing the CANARI-LE.
   
 - [Creating and Using your Own Conda/Mamba Enviroment](creating_your_own_conda_env.md)
 
+- [Running on Sci Servers, installing Micromamba and running your own JupyterLab](running_on_sci_servers.md)
+
 - **Data Analysis Guides:** Access our data analysis guides hosted on the [tutorials repository](https://github.com/CANARI-sprint/tutorials).
 
 To try these tutorials independently, clone the repository in JASMIN with the following commands:

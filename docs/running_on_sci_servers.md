@@ -29,11 +29,12 @@ All of these provide us with the conda or mamba package manager and let us downl
 `"${SHELL}" <(curl -L https://micro.mamba.pm/install.sh)`
 
 This will then ask several questions about configuring Micromamba:
-* When prompted for a micromaba binary folder choose the default choice of ~/.local/bin by pressing enter.
-* Say yes to "Init shell (bash)"
-* Say yes to "Configure conda-forge"
-* For the Prefix Location put "~/.conda", this will store mamba environments in the same location as the notebook service was using. Micromamba will be compaitble with them.
-* After micromamba has finished installing you will either need to logout and back in again or refresh your shell by typing `source ~/.bashrc`. 
+
+ - When prompted for a micromaba binary folder choose the default choice of ~/.local/bin by pressing enter.
+ - Say yes to "Init shell (bash)"
+ - Say yes to "Configure conda-forge"
+ - For the Prefix Location put "~/.conda", this will store mamba environments in the same location as the notebook service was using. Micromamba will be compaitble with them.
+ - After micromamba has finished installing you will either need to logout and back in again or refresh your shell by typing `source ~/.bashrc`. 
 
 At this point you should be able to run the micromamba command as a substitute for any of the mamba/conda commands we've used before. To test this run `micromamba env list` and you should get a list of all of your environments that you've used on the notebook service. 
 
@@ -43,7 +44,7 @@ If you want to run any code in the shared CANARI environment then you need to "a
 Your prompt should now change to start with `(/gws/smf/j04/canari/conda-env)` to indicate that this environment is now active. 
 
 ### Running a JupyterLab instance on a Sci server
-It is recommended that you use your own copy of CANARI environment for this. If you haven't already made one see the instructions in [tutorial 3 - Creating Your Own Conda Enviroment](/docs/creating_your_own_conda_env/). Assuming you ran this tutorial you should have an environment called `canari`, go ahead and activate this by running:
+It is recommended that you use your own copy of CANARI environment for this. If you haven't already made one see the instructions in [tutorial 3 - Creating Your Own Conda Enviroment](/creating_your_own_conda_env/). Assuming you ran this tutorial you should have an environment called `canari`, go ahead and activate this by running:
 `micromamba activate canari`
 
 JupyterLab was already started and can be run with the command:
@@ -63,6 +64,11 @@ The JupyterLab is now running on the sci server you are logged into and listenin
 
 This will bring up a new terminal logged into sci6, but it will also forward requests on your own computer's port 8889 to sci6's port 8889 allowing you to access your Jupyter server on sci6. Now open a web browser and paste in one of the URLs starting "http://" from the output from starting JupyterLab. 
 
-![Screenshot of JupyterLab running on sci6](assets/jupyter-sci6.png)
+![Screenshot of JupyterLab running on sci6](assets/jupyter-sci-server.png)
+
+#### Shutting down your JupyterLab instance
+
+To shutdown your JupyterLab instance press the control key and c at the same time (ctrl+c) in the window where JupyterLab was running. It will ask you `Shutdown this Jupyter server (y/[n])?` press y and enter and then it will shutdown the JupyterLab instance.
+
 
 
