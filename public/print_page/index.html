@@ -260,15 +260,35 @@ Annual Mean Sea Surface Temperature for 1950 in ensemble member 1</p>
 <p><a href="https://docs.google.com/spreadsheets/d/1SDBcFaH3mWBIVluxx_irPIfmaR9x42rA/edit#gid=1072719862">list of analysis useful to multiple people</a></p>
 <p><a href="https://ncas-cms.github.io/canari/metadata/20240229-canari-le-priority-variables.xlsx">priority variables and variable names</a></p>
 <p>CANARI-LE information</p></section><section class="print-page" id="tutorials"><h1 id="tutorials-tutorials">Tutorials</h1>
-<p>Some simple python tutorials to get you started analysing the CANARI-LE on JASMIN.</p>
+<p>Some simple tutorials to get you started analysing the CANARI-LE.</p>
 <ul>
 <li>
-<p><a href="#github">Tutorial 1 - Git Setup and Basics</a></p>
+<p><a href="#github">Git Setup and Basics</a></p>
 </li>
 <li>
-<p><a href="#jasmin_notebook_service">Tutorial 2 - Configuring and Using the JASMIN Notebooks Service</a></p>
+<p><a href="#jasmin_notebook_service">Configuring and Using the JASMIN Notebooks Service</a></p>
 </li>
-</ul></section><section class="print-page" id="faq"><h1 id="faq-faq">FAQ</h1>
+<li>
+<p><strong>Data Analysis Guides:</strong> Access our data analysis guides hosted on the <a href="https://github.com/CANARI-sprint/tutorials">tutorials repository</a>.</p>
+</li>
+</ul>
+<p>To try these tutorials independently, clone the repository in JASMIN with the following commands:</p>
+<pre><code>git clone https://github.com/CANARI-sprint/tutorials.git
+cd tutorials
+</code></pre>
+<p><code>!IMPORTANT:</code> You need to have access to the CANARI gws.</p>
+<p>Here's a catalog of the available notebooks:</p>
+<p>1) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb">Basic Data Handling</a>:</strong> A primer on manipulating data utilizing the COAsT package.</p>
+<p>2) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb">NetCDF Exporting Guide</a>:</strong> Instructions for exporting data to netCDF for archival or further analysis.</p>
+<p>3) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/3_climatology_tutorial.ipynb">Climatology Fundamentals</a>:</strong> A tutorial on computing climatological means and extensive climatologies.</p>
+<p>4) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/4_calculate_eof.ipynb">Empirical Orthogonal Functions (EOFs) Calculation</a>:</strong> Utilizing COAsT for EOF analysis.</p>
+<p>5) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/5_potential_energy.ipynb">Potential Energy Anomaly Calculation</a>:</strong> A guide on assessing Potential Energy Anomaly with regional masking techniques.</p>
+<p>6) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/6_pycnocline.ipynb">Pycnocline Depth and Thickness Diagnostics</a>:</strong> Investigating the depth and thickness of the pycnocline.</p>
+<p>7) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/7_seasonal_decomp.ipynb">Time Series Seasonal Decomposition</a>:</strong> Decomposing time series into its constituent trend, seasonal, and residual elements.</p>
+<p>8) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/8_transect_calculation.ipynb">Data Transect Creation</a>:</strong> Techniques for forming transects from dataset observations.</p>
+<p>9) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb">SST Plots and Analysis</a>:</strong> A walkthrough on generating Sea Surface Temperature (SST) plots using historical CANARI-LE data.</p>
+<p>10) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/10_box_profile_development.ipynb">Ocean Profile Computation</a>:</strong> Calculating ocean profiles using chosen variables.</p>
+<p>11) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_make_slurm_file_for_box_profile.ipynb">Slurm File Creation for Box Profile Analysis</a>:</strong> Generating a slurm file for box profile computation in a designated area.</p></section><section class="print-page" id="faq"><h1 id="faq-faq">FAQ</h1>
 <h2 id="faq-slack">Slack</h2>
 <p><strong>How can I access the CANARI Slack workspace?</strong></p>
 <p>The CANARI Slack workspace can be accessed online <a href="http://canariworkspace.slack.com">here</a>.  If you do not yet have an account you can request one by emailing Ben Harvey (b.j.harvey@ncas.ac.uk) or Jenny Mecking (jmecki@noc.ac.uk) directly and they can add you to the CANARI Slack workspace.</p>

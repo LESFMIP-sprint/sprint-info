@@ -1,4 +1,4 @@
-## Tutorial 1 - Git Setup and Basics
+## Git Setup and Basics
 
 ### About Git and GitHub
 
