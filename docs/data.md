@@ -30,7 +30,7 @@ To access the CANARI-LE data available on JASMIN you need to apply for access to
 
 An example set of data is currently uploaded onto the CANARI gws (/gws/nopw/j04/canari/users/reinhard/data/u-cy573-sample) and priority variables are in process of being downloaded from tape to JASMIN (/gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2).
 
-The list of priority variables are on these [spreadsheets](https://drive.google.com/drive/folders/12CXfpZdFQDTLTi57ROw3VucY_-nozm-b).
+The list of priority variables are on this [spreadsheet](https://ncas-cms.github.io/canari/metadata/20240229-canari-le-priority-variables.xlsx).  You can find the long names for the variables and the short names used in the netcdf files.  Please pay particular attention to the notes in red.
 
 ## Useful Files
 
