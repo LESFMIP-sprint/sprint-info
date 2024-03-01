@@ -14,10 +14,10 @@ We have preconfigured a CANARI conda environment for you to use. This contains m
 * From the Jupyter launcher click on the terminal icon
 * Type: `conda run -p /gws/smf/j04/canari/conda-env python -m ipykernel install --user --name CANARI` and press enter
 * Open a new Jupyter launcher by clicking on File and then New Launcher
-* There should now be a notebook and console option called CANARI. 
+* There should now be a notebook and console option called CANARI, although this can take around one minute to appear.
 
 ### Getting the CANARI example code
-1. Click on the Git menu and choose "Clone a repo" ![Screenshot of the Jupyter Git Menu](assets/jupyter-git-menu.png)
+1. Click on the Git menu and choose "Clone a repo" ![Screenshot of the Jupyter Git Menu](assets/jupyter-git-menu.png). Make sure you are in your home directory by clicking on the folder icon in the file browser on the left side of the screen. ![Screenshot of the Jupyter home directory icon](assets/jupyter-homefolder.png)
 2. Enter https://github.com/CANARI-sprint/tutorials as the URI of the remote Git repository. ![Screenshot of entering the URI](assets/jupyter-git-repo-uri.png)
 3. Click Clone
 
