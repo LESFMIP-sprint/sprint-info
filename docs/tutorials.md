@@ -6,26 +6,36 @@ Some simple tutorials to get you started analysing the CANARI-LE.
 
 - [Configuring and Using the JASMIN Notebooks Service](jasmin_notebook_service.md)
 
-- **Data Analysis Tutorials:** 
+- **Data Analysis Guides:** Access our data analysis guides hosted on the [tutorials repository](https://github.com/CANARI-sprint/tutorials).
 
-1) **[Basic Data Manipulation](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb):** Introduction to data handling using the COAsT package.
+To try these tutorials independently, clone the repository in JASMIN with the following commands:
 
-2) **[Exporting to NetCDF](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb):** Guide on exporting outputs to netCDF format for future use or analysis.
+```
+git clone https://github.com/CANARI-sprint/tutorials.git
+cd tutorials
+```
+`!IMPORTANT:` You need to have access to the CANARI gws.
 
-3) **[Climatology Tutorial](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/3_climatology_tutorial.ipynb):** Demonstrates calculating climatological means and multi-year climatologies.
+Here's a catalog of the available notebooks:
 
-4) **[Calculating EOFs](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/4_calculate_eof.ipynb):** How to utilize COAsT for computing Empirical Orthogonal Functions (EOFs).
+1) **[Basic Data Handling](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb):** A primer on manipulating data utilizing the COAsT package.
 
-5) **[Potential Energy Analysis](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/5_potential_energy.ipynb):** Tutorial on calculating Potential Energy Anomaly and applying regional masking.
+2) **[NetCDF Exporting Guide](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb):** Instructions for exporting data to netCDF for archival or further analysis.
 
-6) **[Pycnocline Diagnostics](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/6_pycnocline.ipynb):** Exploration of pycnocline depth and thickness diagnostics.
+3) **[Climatology Fundamentals](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/3_climatology_tutorial.ipynb):** A tutorial on computing climatological means and extensive climatologies.
 
-7) **[Seasonal Decomposition](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/7_seasonal_decomp.ipynb):** Techniques for decomposing time series into trend, seasonal, and residual components.
+4) **[Empirical Orthogonal Functions (EOFs) Calculation](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/4_calculate_eof.ipynb):** Utilizing COAsT for EOF analysis.
 
-8) **[Transect Calculations](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/8_transect_calculation.ipynb):** Methods for creating data transects.
+5) **[Potential Energy Anomaly Calculation](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/5_potential_energy.ipynb):** A guide on assessing Potential Energy Anomaly with regional masking techniques.
 
-9) **[Basic Plots and Analysis](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb):** Utilizing CANARI-LE historical data for Sea Surface Temperature (SST) visualization.
+6) **[Pycnocline Depth and Thickness Diagnostics](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/6_pycnocline.ipynb):** Investigating the depth and thickness of the pycnocline.
 
-10) **[Box Profile Development](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/10_box_profile_development.ipynb):** Computing ocean profiles with selected variables.
+7) **[Time Series Seasonal Decomposition](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/7_seasonal_decomp.ipynb):** Decomposing time series into its constituent trend, seasonal, and residual elements.
 
-11) **[Creating a Slurm File for Box Profile](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_make_slurm_file_for_box_profile.ipynb):** Guidance on generating a slurm file for computing profiles within a specified box.
+8) **[Data Transect Creation](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/8_transect_calculation.ipynb):** Techniques for forming transects from dataset observations.
+
+9) **[SST Plots and Analysis](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb):** A walkthrough on generating Sea Surface Temperature (SST) plots using historical CANARI-LE data.
+
+10) **[Ocean Profile Computation](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/10_box_profile_development.ipynb):** Calculating ocean profiles using chosen variables.
+
+11) **[Slurm File Creation for Box Profile Analysis](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_make_slurm_file_for_box_profile.ipynb):** Generating a slurm file for box profile computation in a designated area.
