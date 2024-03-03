@@ -4,7 +4,7 @@
 
 [Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to be a Git pro in advance of this event, but come prepared to learn a lot about it! [GitHub](https://github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.
 
-We will use Git and GitHub for collaborative work. Be sure to arrive at OceanHackWeek with your own [GitHub](https://github.com) account.
+We will use Git and GitHub for collaborative work.
 
 ### Git Installation
 
@@ -38,7 +38,7 @@ git config --global core.editor "nano -w"
 
 #### 1. Create a project repository
 
-On your own or someone in your project group (preferably one who has never done it before), create a repository for the project under the `CANARI-sprint` organization, `https://github.com/CANARI-sprint`
+On your own or someone in your project group (preferably one who has done it before), create a repository for the project under the `CANARI-sprint` organization, `https://github.com/CANARI-sprint`
 
 ![New Repo](assets/newRepo.png)
 

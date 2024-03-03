@@ -23,7 +23,7 @@ No, you are not required to use python to do analysis during the sprint.  Feel f
 
 **How can do I access the Jupiter notebook service on JASMIN?**
 
-See Tutorial 1 on the Tutorial page.
+See [Configuring and Using the JASMIN Notebooks Service](jasmin_notebook_service.md) on the Tutorial page.
 
 
 
