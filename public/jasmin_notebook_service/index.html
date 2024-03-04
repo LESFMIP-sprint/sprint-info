@@ -101,14 +101,18 @@
 </ol>
 <p>Your JASMIN home directory and group workspaces will be accessible from within the notebook environment.</p>
 <h3 id="setting-up-the-canari-conda-environment">Setting up the CANARI Conda Environment</h3>
-<p>We have preconfigured a CANARI conda environment for you to use. This contains many (but perhaps not all) of the packages you are likely to need. It is built using the environment.yml file that can be found in the <a href="https://github.com/CANARI-sprint/tutorials/blob/main/environment.yml">CANARI tutorials github</a>. The environment is located on the Group Work Space under the path <code>/gws/smf/j04/canari/conda-env</code>, because it is held in a non-standard location your Jupyter notebooks won't find it automatically. In order to use it do the following:
-* From the Jupyter launcher click on the terminal icon
-* Type: <code>conda run -p /gws/smf/j04/canari/conda-env python -m ipykernel install --user --name CANARI</code> and press enter
-* Open a new Jupyter launcher by clicking on File and then New Launcher
-* There should now be a notebook and console option called CANARI, although this can take around one minute to appear.</p>
+<p>We have preconfigured a CANARI conda environment for you to use. This contains many (but perhaps not all) of the packages you are likely to need. It is built using the environment.yml file that can be found in the <a href="https://github.com/CANARI-sprint/tutorials/blob/main/environment.yml">CANARI tutorials github</a>. The environment is located on the Group Work Space under the path <code>/gws/smf/j04/canari/conda-env</code>, because it is held in a non-standard location your Jupyter notebooks won't find it automatically. In order to use it do the following:</p>
+<ul>
+<li>From the Jupyter launcher click on the terminal icon</li>
+<li>Type: <code>conda run -p /gws/smf/j04/canari/conda-env python -m ipykernel install --user --name CANARI</code> and press enter</li>
+<li>Open a new Jupyter launcher by clicking on File and then New Launcher</li>
+<li>There should now be a notebook and console option called CANARI, although this can take around one minute to appear.</li>
+</ul>
 <h3 id="getting-the-canari-example-code">Getting the CANARI example code</h3>
+<p>First ensure you are in your home directory by clicking on the folder icon in the file browser on the left side of the screen. </p>
+<p><img alt="Screenshot of the Jupyter home directory icon" src="../assets/jupyter-homefolder.png" /></p>
 <ol>
-<li>Click on the Git menu and choose "Clone a repo" <img alt="Screenshot of the Jupyter Git Menu" src="../assets/jupyter-git-menu.png" />. Make sure you are in your home directory by clicking on the folder icon in the file browser on the left side of the screen. <img alt="Screenshot of the Jupyter home directory icon" src="../assets/jupyter-homefolder.png" /></li>
+<li>Click on the Git menu and choose "Clone a repo" <img alt="Screenshot of the Jupyter Git Menu" src="../assets/jupyter-git-menu.png" /></li>
 <li>Enter https://github.com/CANARI-sprint/tutorials as the URI of the remote Git repository. <img alt="Screenshot of entering the URI" src="../assets/jupyter-git-repo-uri.png" /></li>
 <li>Click Clone</li>
 </ol>
@@ -116,8 +120,8 @@
 <h3 id="open-and-run-an-example-notebook">Open and run an example notebook</h3>
 <ol>
 <li>Click on the tutorials folder that contains your clone of the github repository. </li>
-<li>Open the notebooks folder and then the general folder.</li>
-<li>Choose the zarr_files.ipynb notebook </li>
+<li>Open the notebooks folder.</li>
+<li>Choose the 1_basic_manipulation.ipynb notebook </li>
 <li>If you are asked which kernel you would like to use choose the CANARI kernel. <img alt="Jupyter kernel choice screen" src="../assets/jupyter-kernel-choice-2.png" /></li>
 <li>Test the notebook can run by clicking on the Run menu and choosing "Run all cells" or going through each cell one by one and clicking the play button. </li>
 </ol></div>
