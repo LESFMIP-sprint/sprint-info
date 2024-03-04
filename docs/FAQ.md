@@ -25,6 +25,10 @@ No, you are not required to use python to do analysis during the sprint.  Feel f
 
 See [Configuring and Using the JASMIN Notebooks Service](jasmin_notebook_service.md) on the Tutorial page.
 
+## General
 
+**What should I do if I want to share about the sprint on social media?**
+
+Please tag @CANARI_Science in you X/Twitter posts.  @CANARI_Science will all be tweeting updates throughout the event, please feel free to retweet those as well.
 
 

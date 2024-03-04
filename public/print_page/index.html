@@ -133,6 +133,8 @@
         <section class="print-page" id="index"><h1 id="index-about">About</h1>
 <p>As part of the <a href="https://canari.ac.uk/">CANARI project</a> (Climate change in the Arctic – North Atlantic region and impacts on the UK) a large ensemble of the HadGEM3 coupled climate model is being run, <a href="https://canari.ac.uk/resources_new/tools/">CANARI-LE</a>.  A data analysis sprint is planned for the week of March 4-8, 2024 to get a jump start on the analysis of the data being generated.  This page is designed to provide details of the ensemble, information about the <a href="#data">data and how to access</a>, <a href="#setup">pre-event requirements</a>, <a href="#sprint">sprint</a>, <a href="#tutorials">tutorials</a> and <a href="#faq">frequently asked questions</a>.  </p>
 <h2 id="index-highlights">Highlights</h2>
+<p><strong>Day 1</strong></p>
+<p><a href="https://canari.ac.uk/2024/03/04/canari-scientists-begin-analysis-of-the-hadgem3-large-ensemble/">The sprint has begun!</a></p>
 <p>Figures, animations and anything else cool to come soon.  In the meantime:</p>
 <p><img alt="Sea Surface Temperature" src="../assets/sst.png" />
 Annual Mean Sea Surface Temperature for 1950 in ensemble member 1</p>
@@ -281,6 +283,12 @@ Annual Mean Sea Surface Temperature for 1950 in ensemble member 1</p>
 <p><a href="#running_on_sci_servers">Running on Sci Servers, installing Micromamba and running your own JupyterLab</a></p>
 </li>
 <li>
+<p><a href="#running_on_sci_servers">Running on Sci Servers, installing Micromamba and running your own JupyterLab</a></p>
+</li>
+<li>
+<p><a href="https://github.com/CANARI-sprint/CDFTOOLS">CDFTOOLS</a>:  a diagnostic package written in fortran 90 for the analysis of NEMO model output, initialized in the frame of the DRAKKAR project (https://www.drakkar-ocean.eu/)</p>
+</li>
+<li>
 <p><strong>Data Analysis Guides:</strong> Access our data analysis guides hosted on the <a href="https://github.com/CANARI-sprint/tutorials">tutorials repository</a>.</p>
 </li>
 </ul>
@@ -290,17 +298,17 @@ cd tutorials
 </code></pre>
 <p><code>!IMPORTANT:</code> You need to have access to the CANARI gws.</p>
 <p>Here's a catalog of the available notebooks.  The first 8 tutorials refer to the <a href="https://british-oceanographic-data-centre.github.io/COAsT/#about">COAsT python package</a>.</p>
-<p>1) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb">Basic Data Manipulation</a>: Introduction to data handling using the COAsT package.</p>
-<p>2) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb">Exporting to NetCDF</a>: Guide on exporting outputs to netCDF format for future use or analysis.</p>
-<p>3) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/3_climatology_tutorial.ipynb">Climatology Tutorial</a>: Demonstrates calculating climatological means and multi-year climatologies.</p>
-<p>4) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/4_calculate_eof.ipynb">Calculating EOFs</a>: How to utilize COAsT for computing Empirical Orthogonal Functions (EOFs).</p>
-<p>5) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/5_potential_energy.ipynb">Potential Energy Analysis</a>: Tutorial on calculating Potential Energy Anomaly and applying regional masking..</p>
-<p>6) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/6_pycnocline.ipynb">Pycnocline Diagnostics</a>: Exploration of pycnocline depth and thickness diagnostics.</p>
-<p>7) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/7_seasonal_decomp.ipynb">Seasonal Decomposition</a>: Techniques for decomposing time series into trend, seasonal, and residual components.</p>
-<p>8) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/8_transect_calculation.ipynb">Transect Calculations</a>: Methods for creating data transects.</p>
-<p>9) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb">Basic Plots and Analysis</a>: Utilizing CANARI-LE historical data for Sea Surface Temperature (SST) visualization.</p>
-<p>10) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/0_UK_Precipitation_with_iris.ipynb">UK Precipitation Plots</a>: Making plots of UK precipitation using the iris python package, curtesy of Ben Harvey.</p>
-<p>11) **<a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_compute_and_plot_an_ocean_profile_using_lotus.ipynb">Box Profile Development</a>: Computing ocean profiles with selected variables making use of the lotus queue on JASMIN.</p></section><section class="print-page" id="faq"><h1 id="faq-faq">FAQ</h1>
+<p>1) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb">Basic Data Manipulation</a>:</strong> Introduction to data handling using the COAsT package.</p>
+<p>2) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb">Exporting to NetCDF</a>:</strong> Guide on exporting outputs to netCDF format for future use or analysis.</p>
+<p>3) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/3_climatology_tutorial.ipynb">Climatology Tutorial</a>:</strong> Demonstrates calculating climatological means and multi-year climatologies.</p>
+<p>4) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/4_calculate_eof.ipynb">Calculating EOFs</a>:</strong> How to utilize COAsT for computing Empirical Orthogonal Functions (EOFs).</p>
+<p>5) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/5_potential_energy.ipynb">Potential Energy Analysis</a>:</strong> Tutorial on calculating Potential Energy Anomaly and applying regional masking..</p>
+<p>6) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/6_pycnocline.ipynb">Pycnocline Diagnostics</a>:</strong> Exploration of pycnocline depth and thickness diagnostics.</p>
+<p>7) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/7_seasonal_decomp.ipynb">Seasonal Decomposition</a>:</strong> Techniques for decomposing time series into trend, seasonal, and residual components.</p>
+<p>8) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/8_transect_calculation.ipynb">Transect Calculations</a>:</strong> Methods for creating data transects.</p>
+<p>9) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb">Basic Plots and Analysis</a>:</strong> Utilizing CANARI-LE historical data for Sea Surface Temperature (SST) visualization.</p>
+<p>10) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/0_UK_Precipitation_with_iris.ipynb">UK Precipitation Plots</a>:</strong> Making plots of UK precipitation using the iris python package, curtesy of Ben Harvey.</p>
+<p>11) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_compute_and_plot_an_ocean_profile_using_lotus.ipynb">Box Profile Development</a>:</strong> Computing ocean profiles with selected variables making use of the lotus queue on JASMIN.</p></section><section class="print-page" id="faq"><h1 id="faq-faq">FAQ</h1>
 <h2 id="faq-slack">Slack</h2>
 <p><strong>How can I access the CANARI Slack workspace?</strong></p>
 <p>The CANARI Slack workspace can be accessed online <a href="http://canariworkspace.slack.com">here</a>.  If you do not yet have an account you can request one by emailing Ben Harvey (b.j.harvey@ncas.ac.uk) or Jenny Mecking (jmecki@noc.ac.uk) directly and they can add you to the CANARI Slack workspace.</p>
@@ -312,7 +320,10 @@ cd tutorials
 <p><strong>Do I have to use python?</strong></p>
 <p>No, you are not required to use python to do analysis during the sprint.  Feel free to use whatever you are familiar with.  However, you are limited by what is available on JASMIN.  The list of what is available on JASMIN can be found <a href="https://help.jasmin.ac.uk/docs/software-on-jasmin/software-overview/">here</a>.</p>
 <p><strong>How can do I access the Jupiter notebook service on JASMIN?</strong></p>
-<p>See <a href="#jasmin_notebook_service">Configuring and Using the JASMIN Notebooks Service</a> on the Tutorial page.</p></section></div></div>
+<p>See <a href="#jasmin_notebook_service">Configuring and Using the JASMIN Notebooks Service</a> on the Tutorial page.</p>
+<h2 id="faq-general">General</h2>
+<p><strong>What should I do if I want to share about the sprint on social media?</strong></p>
+<p>Please tag @CANARI_Science in you X/Twitter posts.  @CANARI_Science will all be tweeting updates throughout the event, please feel free to retweet those as well.</p></section></div></div>
             </div>
         </div>
 
