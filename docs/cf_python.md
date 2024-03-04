@@ -4,6 +4,8 @@
 
 These examples can all be found in `/home/users/dlrhodso/CANARI/SPRINT_2024/examples`. All sumbit submit multiple jobs in parallel in order to process all ensemble members at once. They use the `LOTUS` script to do this - this is a wrapper script for the SLURM submission commands that make it very easy to submit jobs and not worry about log files etc.
 
+All these scripts use the default JASMIN sci JASPY enviromnet (`module load jaspy`) - but the `LOTUS` script automatically loads JASPY.
+
 ## Computing a box average NAO index
 
 
