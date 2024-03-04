@@ -6,12 +6,11 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 **Day 1**
 
+First results from Dan, the mean sub-polar gyre (50:65N, 0:60W) SST and upper 500 m potential temperature.  With shading showing +/- 1 standard deviation.
+![Sea Surface Temperature](assets/dan_spg_sst.png)
+![Upper 500 m](assets/dan_spg_upper500temp.png)
+
 [The sprint has begun!](https://canari.ac.uk/2024/03/04/canari-scientists-begin-analysis-of-the-hadgem3-large-ensemble/)
-
-Figures, animations and anything else cool to come soon.  In the meantime:
-
-![Sea Surface Temperature](assets/sst.png)
-Annual Mean Sea Surface Temperature for 1950 in ensemble member 1
 
 ## Publications
 
