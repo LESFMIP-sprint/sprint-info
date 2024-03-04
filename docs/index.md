@@ -4,6 +4,10 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 ## Highlights
 
+**Day 1**
+
+[The sprint has begun!](https://canari.ac.uk/2024/03/04/canari-scientists-begin-analysis-of-the-hadgem3-large-ensemble/)
+
 Figures, animations and anything else cool to come soon.  In the meantime:
 
 ![Sea Surface Temperature](assets/sst.png)
