@@ -16,7 +16,7 @@ The sprint will take place March 4-8, 2024 as a hybrid sprint, with each partici
 
 10:35-10:40: Event Communication Plans (Ben Harvey)
 
-10:40-10:45: JASMIN Support Introduction (Matt, Andy and Fatima)
+10:40-10:45: JASMIN Support Introduction (Matt, Alex and Fatima)
 
 10:45-10:50: Research Software Engineer Introduction (Colin Sauze)
 
