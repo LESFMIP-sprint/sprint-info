@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>FAQ - CANARI Sprint</title>
+        <title>Tutorials - CANARI Sprint</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -50,11 +50,11 @@
                             <li class="navitem">
                                 <a href="../sprint/" class="nav-link">Sprint</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../tutorials/" class="nav-link">Tutorials</a>
-                            </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">FAQ</a>
+                                <a href="./" class="nav-link">Tutorials</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../FAQ/" class="nav-link">FAQ</a>
                             </li>
                         </ul>
 
@@ -65,12 +65,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../tutorials/" class="nav-link">
+                                <a rel="prev" href="../sprint/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../FAQ/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -92,20 +92,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#faq" class="nav-link">FAQ</a>
+            <li class="nav-item" data-level="1"><a href="#tutorials" class="nav-link">Tutorials</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#slack" class="nav-link">Slack</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#python" class="nav-link">Python</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#general" class="nav-link">General</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -113,22 +101,48 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="faq">FAQ</h1>
-<h2 id="slack">Slack</h2>
-<p><strong>How can I access the CANARI Slack workspace?</strong></p>
-<p>The CANARI Slack workspace can be accessed online <a href="http://canariworkspace.slack.com">here</a>.  If you do not yet have an account you can request one by emailing Ben Harvey (b.j.harvey@ncas.ac.uk) or Jenny Mecking (jmecki@noc.ac.uk) directly and they can add you to the CANARI Slack workspace.</p>
-<p><strong>How do I join channels on Slack?</strong></p>
-<p>You can see all the channels which already exist in the CANARI Slack workspace by scrolling to the bottom of the list of channels, just before direct messages and there should be an option '+ Add channels'.  Clicking on '+ Add channels' will bring up 2 options, choose 'Browse Channels' and you will get a list of all the channels and they will all an option to join them when you hover over them.  All channels specific to for the sprint will be labeled 'sprint' and channels specific to ask for help are labeled 'sprint-help'.</p>
-<p><strong>Can I make my own channel on the CANARI Slack workspace for the sprint?</strong></p>
-<p>Everyone is welcome to make their own slack channels to help collaborate during the sprint.  When creating a new channel specifically for the sprint please name it starting with 'sprint-'.</p>
-<h2 id="python">Python</h2>
-<p><strong>Do I have to use python?</strong></p>
-<p>No, you are not required to use python to do analysis during the sprint.  Feel free to use whatever you are familiar with.  However, you are limited by what is available on JASMIN.  The list of what is available on JASMIN can be found <a href="https://help.jasmin.ac.uk/docs/software-on-jasmin/software-overview/">here</a>.</p>
-<p><strong>How can do I access the Jupiter notebook service on JASMIN?</strong></p>
-<p>See <a href="../jasmin_notebook_service/">Configuring and Using the JASMIN Notebooks Service</a> on the Tutorial page.</p>
-<h2 id="general">General</h2>
-<p><strong>What should I do if I want to share about the sprint on social media?</strong></p>
-<p>Please tag @CANARI_Science in you X/Twitter posts.  @CANARI_Science will all be tweeting updates throughout the event, please feel free to retweet those as well.</p></div>
+<h1 id="tutorials">Tutorials</h1>
+<p>Some simple tutorials to get you started analysing the CANARI-LE.</p>
+<ul>
+<li>
+<p><a href="../github/">Git Setup and Basics</a></p>
+</li>
+<li>
+<p><a href="../jasmin_notebook_service/">Configuring and Using the JASMIN Notebooks Service</a></p>
+</li>
+<li>
+<p><a href="../creating_your_own_conda_env/">Creating and Using your Own Conda/Mamba Enviroment</a></p>
+</li>
+<li>
+<p><a href="../running_on_sci_servers/">Running on Sci Servers, installing Micromamba and running your own JupyterLab</a></p>
+</li>
+<li>
+<p><a href="../cf_python/">Computing indices with cf-python</a></p>
+</li>
+<li>
+<p><a href="https://github.com/CANARI-sprint/CDFTOOLS">CDFTOOLS</a>:  a diagnostic package written in fortran 90 for the analysis of NEMO model output, initialized in the frame of the DRAKKAR project (https://www.drakkar-ocean.eu/)</p>
+</li>
+<li>
+<p><strong>Data Analysis Guides:</strong> Access our data analysis guides hosted on the <a href="https://github.com/CANARI-sprint/tutorials">tutorials repository</a>.</p>
+</li>
+</ul>
+<p>To try these tutorials independently, clone the repository in JASMIN with the following commands:</p>
+<pre><code>git clone https://github.com/CANARI-sprint/tutorials.git
+cd tutorials
+</code></pre>
+<p><code>!IMPORTANT:</code> You need to have access to the CANARI gws.</p>
+<p>Here's a catalog of the available notebooks.  The first 8 tutorials refer to the <a href="https://british-oceanographic-data-centre.github.io/COAsT/#about">COAsT python package</a>.</p>
+<p>1) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb">Basic Data Manipulation</a>:</strong> Introduction to data handling using the COAsT package.</p>
+<p>2) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb">Exporting to NetCDF</a>:</strong> Guide on exporting outputs to netCDF format for future use or analysis.</p>
+<p>3) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/3_climatology_tutorial.ipynb">Climatology Tutorial</a>:</strong> Demonstrates calculating climatological means and multi-year climatologies.</p>
+<p>4) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/4_calculate_eof.ipynb">Calculating EOFs</a>:</strong> How to utilize COAsT for computing Empirical Orthogonal Functions (EOFs).</p>
+<p>5) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/5_potential_energy.ipynb">Potential Energy Analysis</a>:</strong> Tutorial on calculating Potential Energy Anomaly and applying regional masking..</p>
+<p>6) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/6_pycnocline.ipynb">Pycnocline Diagnostics</a>:</strong> Exploration of pycnocline depth and thickness diagnostics.</p>
+<p>7) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/7_seasonal_decomp.ipynb">Seasonal Decomposition</a>:</strong> Techniques for decomposing time series into trend, seasonal, and residual components.</p>
+<p>8) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/8_transect_calculation.ipynb">Transect Calculations</a>:</strong> Methods for creating data transects.</p>
+<p>9) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb">Basic Plots and Analysis</a>:</strong> Utilizing CANARI-LE historical data for Sea Surface Temperature (SST) visualization.</p>
+<p>10) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/0_UK_Precipitation_with_iris.ipynb">UK Precipitation Plots</a>:</strong> Making plots of UK precipitation using the iris python package, curtesy of Ben Harvey.</p>
+<p>11) <strong><a href="https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_compute_and_plot_an_ocean_profile_using_lotus.ipynb">Box Profile Development</a>:</strong> Computing ocean profiles with selected variables making use of the lotus queue on JASMIN.</p></div>
             </div>
         </div>
 

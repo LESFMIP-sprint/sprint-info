@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>FAQ - CANARI Sprint</title>
+        <title>Computing indices with cf-python - CANARI Sprint</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -53,8 +53,8 @@
                             <li class="navitem">
                                 <a href="../tutorials/" class="nav-link">Tutorials</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">FAQ</a>
+                            <li class="navitem">
+                                <a href="../FAQ/" class="nav-link">FAQ</a>
                             </li>
                         </ul>
 
@@ -64,16 +64,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../tutorials/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -92,17 +82,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#faq" class="nav-link">FAQ</a>
+            <li class="nav-item" data-level="1"><a href="#computing-indices-with-cf-python" class="nav-link">Computing indices with cf-python</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#slack" class="nav-link">Slack</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#python" class="nav-link">Python</a>
+            <li class="nav-item" data-level="2"><a href="#computing-a-box-average-nao-index" class="nav-link">Computing a box average NAO index</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#general" class="nav-link">General</a>
+            <li class="nav-item" data-level="2"><a href="#computing-a-box-average-index-for-sst" class="nav-link">Computing a box average index for SST</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -113,22 +99,150 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="faq">FAQ</h1>
-<h2 id="slack">Slack</h2>
-<p><strong>How can I access the CANARI Slack workspace?</strong></p>
-<p>The CANARI Slack workspace can be accessed online <a href="http://canariworkspace.slack.com">here</a>.  If you do not yet have an account you can request one by emailing Ben Harvey (b.j.harvey@ncas.ac.uk) or Jenny Mecking (jmecki@noc.ac.uk) directly and they can add you to the CANARI Slack workspace.</p>
-<p><strong>How do I join channels on Slack?</strong></p>
-<p>You can see all the channels which already exist in the CANARI Slack workspace by scrolling to the bottom of the list of channels, just before direct messages and there should be an option '+ Add channels'.  Clicking on '+ Add channels' will bring up 2 options, choose 'Browse Channels' and you will get a list of all the channels and they will all an option to join them when you hover over them.  All channels specific to for the sprint will be labeled 'sprint' and channels specific to ask for help are labeled 'sprint-help'.</p>
-<p><strong>Can I make my own channel on the CANARI Slack workspace for the sprint?</strong></p>
-<p>Everyone is welcome to make their own slack channels to help collaborate during the sprint.  When creating a new channel specifically for the sprint please name it starting with 'sprint-'.</p>
-<h2 id="python">Python</h2>
-<p><strong>Do I have to use python?</strong></p>
-<p>No, you are not required to use python to do analysis during the sprint.  Feel free to use whatever you are familiar with.  However, you are limited by what is available on JASMIN.  The list of what is available on JASMIN can be found <a href="https://help.jasmin.ac.uk/docs/software-on-jasmin/software-overview/">here</a>.</p>
-<p><strong>How can do I access the Jupiter notebook service on JASMIN?</strong></p>
-<p>See <a href="../jasmin_notebook_service/">Configuring and Using the JASMIN Notebooks Service</a> on the Tutorial page.</p>
-<h2 id="general">General</h2>
-<p><strong>What should I do if I want to share about the sprint on social media?</strong></p>
-<p>Please tag @CANARI_Science in you X/Twitter posts.  @CANARI_Science will all be tweeting updates throughout the event, please feel free to retweet those as well.</p></div>
+<h1 id="computing-indices-with-cf-python">Computing indices with cf-python</h1>
+<p><a href="https://ncas-cms.github.io/cf-python/">cf-python</a> is a python Earth Science data analysis library that is built on a complete implementation of the CF data model. It makes reading, writing and processing of cf netcdf data very simple. This tutorial points to some basic examples for use on the CANARI SPRINT data on JASMIN</p>
+<p>These examples can all be found in <code>/home/users/dlrhodso/CANARI/SPRINT_2024/examples</code>. All sumbit submit multiple jobs in parallel in order to process all ensemble members at once. They use the <code>LOTUS</code> script to do this - this is a wrapper script for the SLURM submission commands that make it very easy to submit jobs and not worry about log files etc.</p>
+<p>All these scripts use the default JASMIN sci JASPY enviromnet (<code>module load jaspy</code>) - but the <code>LOTUS</code> script automatically loads JASPY.</p>
+<h2 id="computing-a-box-average-nao-index">Computing a box average NAO index</h2>
+<p><code>compute_nao.sh</code> loops over all MSLP files in the <code>/gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2</code> directory and uses the <code>compute_nao.py</code> python script to compute the NAO index.</p>
+<pre><code>#!/usr/bin/env python
+
+import cf
+import sys
+import glob
+from origin import *
+
+def get_NAO_djf(field):
+    '''
+    Compute a DJF NAO index by box averaging Azores (20:28W,36:40N) - Iceland (16:25W,63:70N) and averaging over Dec-Jan-Feb
+    '''
+    #assume field== MSLP!
+    #get sub-regions for boxes
+    iceland_box=field.subspace(X=cf.wi(-25,-16),Y=cf.wi(63,70))
+    azores_box=field.subspace(X=cf.wi(-28,-20),Y=cf.wi(36,40))
+    #compute the area means (weighted by cell area) and difference
+    nao=azores_box.collapse('area: mean',weights=True,squeeze=True)-iceland_box.collapse('area: mean', weights=True,squeeze=True)
+    #compute the DJF mean
+    nao_mean=nao.collapse('time: mean',group=cf.djf())
+    #change the name 
+    nao_mean.standard_name='NAO_djf'
+    #And the netcdf name
+    nao_mean.nc_set_variable('NAO_djf')
+    #and the long_name
+    nao_mean.set_properties({'long_name':'NAO_djf'})
+    #return nao index
+    return(nao_mean)
+
+#Atmosphere grid cell area
+areacella='/home/users/dlrhodso/CANARI/SPRINT_2024/analysis/areacella_fx_HadGEM3-GC31-MM_piControl_r1i1p1f1_gn_fixed.nc'
+
+#a tag definining what this index is
+outfile_origin=&quot;DJF NAO index computed as the Azores (20:28W, 36:40N) box mean  minus Iceland (16:25W,63:70N) box mean &quot;
+
+#First argument is scratch directory
+scratch=sys.argv[1]
+#file pattern for the MSLP diagnostic (m01s16i222)
+#Only daily mean MSLP is available
+file=sys.argv[2]+'/ATM/yearly/*/*day_m01s16i222*'
+#expand this pattern
+files=glob.glob(file)
+#create output filename
+outfilename=scratch+'/nao-djf_'+files[0].split('/')[-1]
+
+#read in data, adding in the cell area from the external file
+data=cf.read(file,external=areacella)
+#compute nao index
+nao_djf=get_NAO_djf(data[0])
+
+#write out NAO index with description text
+o_write(nao_djf,outfilename,outfile_origin)
+print(&quot;Written &quot;+outfilename)
+
+</code></pre>
+<p>This script will write the output to <code>scratch_pw3/NAO/</code> as files for each ensemble member</p>
+<h2 id="computing-a-box-average-index-for-sst">Computing a box average index for SST</h2>
+<p><code>compute_SPG_T.sh</code></p>
+<pre><code>#!/usr/bin/env python
+
+import cf
+import sys
+import glob
+from origin import *
+
+def compute_spg(field):
+    '''
+    compute SPG 50:65N 0:60W
+    '''
+    #compute SPG over 50:65N, 0:60W and 1st ocean layer (0:1m)
+    #extract subspace
+    sub_field=field.subspace(latitude=cf.wi(50,65),longitude=cf.wi(-60,0)).squeeze()
+    #compute mean over subspace, weighting by area
+    spg=sub_field.collapse('area: mean', weights='area',squeeze=True)
+    #add names
+    spg.standard_name='sub_polar_gyre_index_50_65N'
+    spg.nc_set_variable('SPG_50_65N')
+    spg.set_properties({'long_name':'sub_polar_gyre_50_60N'})
+
+    return(spg)
+
+
+#ocean cell area file
+areacello=&quot;areacello.nc&quot;
+
+#a tag definining what this index is
+outfile_origin=&quot;SubPolar Gyre Temperaure index computed as the  box mean of  over () box mean &quot;
+
+#First argument is scratch directory
+scratch=sys.argv[1]
+
+#file pattern for the SST diagnostic 
+
+#file to read in
+file=sys.argv[2]
+#file name to write out
+outfilename=sys.argv[3]
+#variable name 
+variable=sys.argv[4]
+
+#expand this pattern
+year,fname=file.split('/')[-2:]
+
+#read in data, adding in the cell area from the external file
+data=cf.read(file,external=areacello)
+if len(data)&gt;1:
+    print(&quot;Aggregation failed!&quot;)
+    exit()
+#axis labels need to be added
+data[0].coord('long_name=cell index along first dimension').axis='X'
+data[0].coord('long_name=cell index along second dimension').axis='Y'
+#compute spg index
+varname=&quot;SPG_&quot;+variable
+index=compute_spg(data[0])
+index.standard_name=varname
+index.nc_set_variable(varname)
+
+#compute the monthly means
+index_monthly=index.collapse('time: mean', group=cf.M())
+index_monthly.standard_name=varname+&quot;_mon&quot;
+index_monthly.nc_set_variable(varname+&quot;_mon&quot;)
+
+#compute the annual means
+index_annual=index.collapse('time: mean', group=cf.Y())
+index_annual.standard_name=varname+&quot;_ann&quot;
+index_annual.nc_set_variable(varname+&quot;_ann&quot;)
+
+outlist=cf.FieldList()
+outlist.append(index)
+outlist.append(index_monthly)
+outlist.append(index_annual)
+
+#write out NAO index with description text
+o_write(outlist,outfilename,outfile_origin)
+print(&quot;Written &quot;+outfilename)
+
+
+</code></pre>
+<p>This produces multiple files in <code>scratch_pw3</code> that need to be assembled into a single file for each ensemble member. <code>concat_SPG_T.sh</code> does this usings <code>concat_cf.py</code>. </p></div>
             </div>
         </div>
 

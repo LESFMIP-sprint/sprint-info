@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>FAQ - CANARI Sprint</title>
+        <title>Data - CANARI Sprint</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -41,8 +41,8 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">About</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../data/" class="nav-link">Data</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Data</a>
                             </li>
                             <li class="navitem">
                                 <a href="../setup/" class="nav-link">Pre-event</a>
@@ -53,8 +53,8 @@
                             <li class="navitem">
                                 <a href="../tutorials/" class="nav-link">Tutorials</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">FAQ</a>
+                            <li class="navitem">
+                                <a href="../FAQ/" class="nav-link">FAQ</a>
                             </li>
                         </ul>
 
@@ -65,12 +65,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../tutorials/" class="nav-link">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../setup/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -92,17 +92,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#faq" class="nav-link">FAQ</a>
+            <li class="nav-item" data-level="1"><a href="#data" class="nav-link">Data</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#slack" class="nav-link">Slack</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#python" class="nav-link">Python</a>
+            <li class="nav-item" data-level="2"><a href="#ensemble-details" class="nav-link">Ensemble Details</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#general" class="nav-link">General</a>
+            <li class="nav-item" data-level="2"><a href="#state-of-ensemble" class="nav-link">State of Ensemble</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-access" class="nav-link">Data Access</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#useful-files" class="nav-link">Useful Files</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-to-cite" class="nav-link">How to cite</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hadgem3-gc31-mm-papers" class="nav-link">HadGEM3-GC3.1-MM Papers</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -113,22 +125,32 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="faq">FAQ</h1>
-<h2 id="slack">Slack</h2>
-<p><strong>How can I access the CANARI Slack workspace?</strong></p>
-<p>The CANARI Slack workspace can be accessed online <a href="http://canariworkspace.slack.com">here</a>.  If you do not yet have an account you can request one by emailing Ben Harvey (b.j.harvey@ncas.ac.uk) or Jenny Mecking (jmecki@noc.ac.uk) directly and they can add you to the CANARI Slack workspace.</p>
-<p><strong>How do I join channels on Slack?</strong></p>
-<p>You can see all the channels which already exist in the CANARI Slack workspace by scrolling to the bottom of the list of channels, just before direct messages and there should be an option '+ Add channels'.  Clicking on '+ Add channels' will bring up 2 options, choose 'Browse Channels' and you will get a list of all the channels and they will all an option to join them when you hover over them.  All channels specific to for the sprint will be labeled 'sprint' and channels specific to ask for help are labeled 'sprint-help'.</p>
-<p><strong>Can I make my own channel on the CANARI Slack workspace for the sprint?</strong></p>
-<p>Everyone is welcome to make their own slack channels to help collaborate during the sprint.  When creating a new channel specifically for the sprint please name it starting with 'sprint-'.</p>
-<h2 id="python">Python</h2>
-<p><strong>Do I have to use python?</strong></p>
-<p>No, you are not required to use python to do analysis during the sprint.  Feel free to use whatever you are familiar with.  However, you are limited by what is available on JASMIN.  The list of what is available on JASMIN can be found <a href="https://help.jasmin.ac.uk/docs/software-on-jasmin/software-overview/">here</a>.</p>
-<p><strong>How can do I access the Jupiter notebook service on JASMIN?</strong></p>
-<p>See <a href="../jasmin_notebook_service/">Configuring and Using the JASMIN Notebooks Service</a> on the Tutorial page.</p>
-<h2 id="general">General</h2>
-<p><strong>What should I do if I want to share about the sprint on social media?</strong></p>
-<p>Please tag @CANARI_Science in you X/Twitter posts.  @CANARI_Science will all be tweeting updates throughout the event, please feel free to retweet those as well.</p></div>
+<h1 id="data">Data</h1>
+<p>The CANARI-LE is currently being run on ARCHER2 with data being stored on tape on JASMIN with some data being stored in the CANARI group workspace (gws).</p>
+<h2 id="ensemble-details">Ensemble Details</h2>
+<p>Model: HadGEM3-GC1.3-MM, same configuration as used in CMIP6, global configuration version 3.1</p>
+<p>Ocean: NEMO3.6</p>
+<p>Atmosphere: UM</p>
+<p>Sea Ice: CICE</p>
+<p>Land: Jules</p>
+<p>40 historical (1950-2014) ensemble members</p>
+<p>40 future projection, SSP3-7.0 (2015-2100) ensemble members </p>
+<p>More information on the CANARI-LE can be found <a href="https://ncas-cms.github.io/canari/">here</a>.</p>
+<h2 id="state-of-ensemble">State of Ensemble</h2>
+<p>Currently running historical simulations, with 27 ensemble members completed and 13 running.  Detailed information on the state of the ensemble can be found <a href="https://gws-access.jasmin.ac.uk/public/canari/production/canari-le-production-status.html">here</a>.</p>
+<h2 id="data-access">Data Access</h2>
+<p>To access the CANARI-LE data available on JASMIN you need to apply for access to the CANARI gws through the <a href="https://accounts.jasmin.ac.uk/">JASMIN accounts portal</a> under the my services button.</p>
+<p>An example set of data is currently uploaded onto the CANARI gws (/gws/nopw/j04/canari/users/reinhard/data/u-cy573-sample) and priority variables are in process of being downloaded from tape to JASMIN (/gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2).</p>
+<p>The list of priority variables are on this <a href="https://ncas-cms.github.io/canari/metadata/20240229-canari-le-priority-variables.xlsx">spreadsheet</a>.  You can find the long names for the variables and the short names used in the netcdf files.  Please pay particular attention to the notes in red.</p>
+<h2 id="useful-files">Useful Files</h2>
+<p>For the ocean the mesh_mask and subbasins files can be found in the CANARI gws here /gws/nopw/j04/canari/shared/large-ensemble/ocean</p>
+<h2 id="how-to-cite">How to cite</h2>
+<p>There is no specific paper yet on the large ensemble, so please reference the HadGEM3.1 paper (<a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017MS001115">Williams et al. 2017</a>) and acknowledge CANARI and JASMIN.</p>
+<h2 id="hadgem3-gc31-mm-papers">HadGEM3-GC3.1-MM Papers</h2>
+<p><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017MS001115">Williams et al. 2017</a> The Met Office Global Coupled Model 3.0 and 3.1 (GC3.0 and GC3.1) Configurations</p>
+<p><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018MS001495">Menary et al. 2018</a> Preindustrial Control Simulations With HadGEM3-GC3.1 for CMIP6</p>
+<p><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019MS001995">Andrews et al. 2020</a> Historical Simulations With HadGEM3-GC3.1 for CMIP6</p>
+<p><a href="https://journals.ametsoc.org/view/journals/clim/35/4/JCLI-D-21-0281.1.xml">Lai et al. 2022</a> Mechanisms of Internal Atlantic Multidecadal Variability in HadGEM3-GC3.1 at Two Different Resolutions</p></div>
             </div>
         </div>
 

@@ -4,6 +4,12 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 ## Highlights
 
+**Day 2**
+
+First results from Tony who is looking sudden stratospheric warming, the figure takes a look at the annual cycle of 10hPa U in ensemble member 1.  Years with suspected SSW are highlighted in colour, others are in grey.
+
+![10 hPa U](assets/Tony_u_60N_10hPa_CANARI_LE_member_01.png)
+
 **Day 1**
 
 First results from Dan, the mean sub-polar gyre (50:65N, 0:60W) SST and upper 500 m potential temperature.  With shading showing +/- 1 standard deviation.

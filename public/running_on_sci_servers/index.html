@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>FAQ - CANARI Sprint</title>
+        <title>Running on sci servers - CANARI Sprint</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -53,8 +53,8 @@
                             <li class="navitem">
                                 <a href="../tutorials/" class="nav-link">Tutorials</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">FAQ</a>
+                            <li class="navitem">
+                                <a href="../FAQ/" class="nav-link">FAQ</a>
                             </li>
                         </ul>
 
@@ -64,16 +64,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../tutorials/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -92,20 +82,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#faq" class="nav-link">FAQ</a>
+            <li class="nav-item" data-level="2"><a href="#running-on-the-jasmin-sci-servers" class="nav-link">Running on the JASMIN Sci Servers</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#slack" class="nav-link">Slack</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#python" class="nav-link">Python</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#general" class="nav-link">General</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -113,22 +91,58 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="faq">FAQ</h1>
-<h2 id="slack">Slack</h2>
-<p><strong>How can I access the CANARI Slack workspace?</strong></p>
-<p>The CANARI Slack workspace can be accessed online <a href="http://canariworkspace.slack.com">here</a>.  If you do not yet have an account you can request one by emailing Ben Harvey (b.j.harvey@ncas.ac.uk) or Jenny Mecking (jmecki@noc.ac.uk) directly and they can add you to the CANARI Slack workspace.</p>
-<p><strong>How do I join channels on Slack?</strong></p>
-<p>You can see all the channels which already exist in the CANARI Slack workspace by scrolling to the bottom of the list of channels, just before direct messages and there should be an option '+ Add channels'.  Clicking on '+ Add channels' will bring up 2 options, choose 'Browse Channels' and you will get a list of all the channels and they will all an option to join them when you hover over them.  All channels specific to for the sprint will be labeled 'sprint' and channels specific to ask for help are labeled 'sprint-help'.</p>
-<p><strong>Can I make my own channel on the CANARI Slack workspace for the sprint?</strong></p>
-<p>Everyone is welcome to make their own slack channels to help collaborate during the sprint.  When creating a new channel specifically for the sprint please name it starting with 'sprint-'.</p>
-<h2 id="python">Python</h2>
-<p><strong>Do I have to use python?</strong></p>
-<p>No, you are not required to use python to do analysis during the sprint.  Feel free to use whatever you are familiar with.  However, you are limited by what is available on JASMIN.  The list of what is available on JASMIN can be found <a href="https://help.jasmin.ac.uk/docs/software-on-jasmin/software-overview/">here</a>.</p>
-<p><strong>How can do I access the Jupiter notebook service on JASMIN?</strong></p>
-<p>See <a href="../jasmin_notebook_service/">Configuring and Using the JASMIN Notebooks Service</a> on the Tutorial page.</p>
-<h2 id="general">General</h2>
-<p><strong>What should I do if I want to share about the sprint on social media?</strong></p>
-<p>Please tag @CANARI_Science in you X/Twitter posts.  @CANARI_Science will all be tweeting updates throughout the event, please feel free to retweet those as well.</p></div>
+<h2 id="running-on-the-jasmin-sci-servers">Running on the JASMIN Sci Servers</h2>
+<p>The JASMIN notebook service only has limited resources and might not be sufficient for some larger datasets. One alternative is to use the Sci servers. These are 8 shared servers which JASMIN users can login to and run code on.</p>
+<h3 id="logging-on-to-the-sci-servers">Logging on to the Sci servers</h3>
+<p>First login to the JASMIN login server (replace <jasminusername> with your own username):</p>
+<p><code>ssh -A &lt;jasminusername&gt;@login1.jasmin.ac.uk</code></p>
+<p>Do not forget to add the <code>-A</code> option to add your SSH key to the session.</p>
+<p>Then login to one of the sci servers, there are 8 of these in total called sci1-8.</p>
+<p><code>ssh sci6</code></p>
+<p>Or this can all be wrapped up in one command using an SSH "jump host" with:
+<code>ssh -J &lt;jasminusername&gt;@login1.jasmin.ac.uk &lt;jasminusername&gt;@sci6</code></p>
+<h3 id="anacionda-miniconda-or-micromamba">Anacionda, Miniconda or Micromamba?</h3>
+<p>Unlike the Notebook server neither Conda or Mamba are installed by default on the Sci servers and we must install them ourselves. There are three possible options:</p>
+<ol>
+<li><a href="https://www.anaconda.com/download">Anaconda</a> - A heavyweight distribution with many popular packages pre-installed. This is about 1 gigabyte in size.</li>
+<li><a href="https://docs.anaconda.com/free/miniconda/index.html">Miniconda</a> - A lightweight dsitribution with only a few packages such as Python pre-installed. This is about 140 megabytes in size.</li>
+<li><a href="https://github.com/mamba-org/micromamba-releases">Micromamba</a> - The mamba package manager and nothing else, we can use this to install Python and any other packages we need. This is only 14 megabytes.</li>
+</ol>
+<p>All of these provide us with the conda or mamba package manager and let us download more packages if needed. Since it is the smallest and simplest, we'll use micromamba for this example. Feel free to follow the links above and use Anaconda or Miniconda if you prefer. </p>
+<h3 id="installing-micromamba">Installing Micromamba</h3>
+<p>To download Micromamba run the following:
+<code>"${SHELL}" &lt;(curl -L https://micro.mamba.pm/install.sh)</code></p>
+<p>This will then ask several questions about configuring Micromamba:</p>
+<ul>
+<li>When prompted for a micromaba binary folder choose the default choice of ~/.local/bin by pressing enter.</li>
+<li>Say yes to "Init shell (bash)"</li>
+<li>Say yes to "Configure conda-forge"</li>
+<li>For the Prefix Location put "~/.conda", this will store mamba environments in the same location as the notebook service was using. Micromamba will be compaitble with them.</li>
+<li>After micromamba has finished installing you will either need to logout and back in again or refresh your shell by typing <code>source ~/.bashrc</code>. </li>
+</ul>
+<p>At this point you should be able to run the micromamba command as a substitute for any of the mamba/conda commands we've used before. To test this run <code>micromamba env list</code> and you should get a list of all of your environments that you've used on the notebook service. </p>
+<h3 id="activating-the-shared-canari-environment">Activating the shared CANARI environment</h3>
+<p>If you want to run any code in the shared CANARI environment then you need to "activate" that enviroment (or use the micromamba run command). To do this run:
+<code>micromamba activate -p /gws/smf/j04/canari/conda-env</code>
+Your prompt should now change to start with <code>(/gws/smf/j04/canari/conda-env)</code> to indicate that this environment is now active. </p>
+<h3 id="running-a-jupyterlab-instance-on-a-sci-server">Running a JupyterLab instance on a Sci server</h3>
+<p>It is recommended that you use your own copy of CANARI environment for this. If you haven't already made one see the instructions in <a href="/creating_your_own_conda_env/">tutorial 3 - Creating Your Own Conda Enviroment</a>. Assuming you ran this tutorial you should have an environment called <code>canari</code>, go ahead and activate this by running:
+<code>micromamba activate canari</code></p>
+<p>JupyterLab was already started and can be run with the command:
+<code>jupyter-lab</code>
+This will put a lot of text onto the screen, but at the bottom it will say something like:</p>
+<pre><code>   To access the server, open this file in a browser:
+        file:///home/users/colinsau/.local/share/jupyter/runtime/jpserver-27367-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/lab?token=cb9017ebaf05fa72769e7136bbfed6373ddf12e5dd9213d7
+        http://127.0.0.1:8889/lab?token=cb9017ebaf05fa72769e7136bbfed6373ddf12e5dd9213d7
+</code></pre>
+<p>The JupyterLab is now running on the sci server you are logged into and listening to requests on port 8889 (your port number might be different, pay attention to this!). But to connect to it we need to open another SSH session. Note that you must leave this SSH session/terminal window open, if you press ctrl+c or close it then the JupyterLab session will stop. To open another SSH session open another terminal and run:</p>
+<p><code>ssh -J &lt;jasminusername&gt;@login1.jasmin.ac.uk -L 8889:localhost:8889 &lt;jasminusername&gt;@sci6</code></p>
+<p>This will bring up a new terminal logged into sci6, but it will also forward requests on your own computer's port 8889 to sci6's port 8889 allowing you to access your Jupyter server on sci6. Now open a web browser and paste in one of the URLs starting "http://" from the output from starting JupyterLab. </p>
+<p><img alt="Screenshot of JupyterLab running on sci6" src="../assets/jupyter-sci-server.png" /></p>
+<h4 id="shutting-down-your-jupyterlab-instance">Shutting down your JupyterLab instance</h4>
+<p>To shutdown your JupyterLab instance press the control key and c at the same time (ctrl+c) in the window where JupyterLab was running. It will ask you <code>Shutdown this Jupyter server (y/[n])?</code> press y and enter and then it will shutdown the JupyterLab instance.</p></div>
             </div>
         </div>
 
