@@ -6,6 +6,10 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 **Day 2**
 
+First results from Bablu, the surface ocean heat flux in the sub-polar gyre for all ensemble members.
+
+![spna heat flux](assets/bablu_spna_sohefldo_timeseries_all.png)
+
 First results from Tony who is looking sudden stratospheric warming, the figure takes a look at the annual cycle of 10hPa U in ensemble member 1.  Years with suspected SSW are highlighted in colour, others are in grey.
 
 ![10 hPa U](assets/Tony_u_60N_10hPa_CANARI_LE_member_01.png)

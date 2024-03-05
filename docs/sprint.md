@@ -42,13 +42,21 @@ The sprint will take place March 4-8, 2024 as a hybrid sprint, with each partici
 
 16:30-17:00:  highlights of the day
 
-## March 6,7, 2024:
+## March 6, 2024:
 
 9:45: Zoom channel opens for the day
 
 10:00-10:30:  Good morning, sharing of known issues and good to knows
 
-16:30-17:00:  highlights of the day
+16:30-17:00:  highlights of the day (Scott Osprey)
+
+## March 7, 2024:
+
+9:45: Zoom channel opens for the day
+
+10:00-10:30:  Good morning, sharing of known issues and good to knows
+
+16:30-17:00:  highlights of the day (Len Shaffrey)
 
 ## March 8, 2024:
 
