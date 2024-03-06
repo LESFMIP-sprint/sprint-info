@@ -6,6 +6,20 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 **Day 3**
 
+First results from Kamil, Claire and Owen, investigating sea surface temperature in cold air outbreak regions.
+
+![CAO](assets/Claire_CAO.png)
+
+More AMOC plots from Niamh, this time in depth space at 40N.
+
+![Niamh_AMOC](assets/Niamh_AMOC.png)
+
+Here are some Adam's plots of annual mean AMOC index at 26N and 1 km depth.
+
+![Adam_AMOC](assets/Adam_AMOC26N_1k_annual_ts.png)
+
+Now available, thanks to Adam, AMOC in depth and density space (/gws/nopw/j04/canari/shared/large-ensemble/derived/HIST2/_ensemble num_/OCN/yearly/_year_/).
+
 First results from Lizzie, composite of DJF sea level pressure for strong - weak polar vortex.
 
 ![polar vortex](assets/lizzie_polar_vortex.png)
