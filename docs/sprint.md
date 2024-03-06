@@ -64,6 +64,8 @@ The sprint will take place March 4-8, 2024 as a hybrid sprint, with each partici
 
 10:00-10:30:  Good morning, sharing of known issues and good to knows
 
+10:00-10:30:  A group zoom screen shot will be done at the end of the good morning meeting
+
 16:00-17:00:  highlights of the week
 
 ## Useful links

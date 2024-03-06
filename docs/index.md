@@ -4,6 +4,12 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 ## Highlights
 
+**Day 3**
+
+First results from Lizzie, composite of DJF sea level pressure for strong - weak polar vortex.
+
+![polar vortex](assets/lizzie_polar_vortex.png)
+
 **Day 2**
 
 First results from Bablu, the surface ocean heat flux in the sub-polar gyre for all ensemble members.
