@@ -6,7 +6,7 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 **Day 3**
 
-First results from Kamil, Claire and Owen, investigating sea surface temperature in cold air outbreak regions.
+First results from Claire investigating sea surface temperature in cold air outbreak regions.
 
 ![CAO](assets/Claire_CAO.png)
 
