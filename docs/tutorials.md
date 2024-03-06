@@ -10,6 +10,8 @@ Some simple tutorials to get you started analysing the CANARI-LE.
 
 - [Running on Sci Servers, installing Micromamba and running your own JupyterLab](running_on_sci_servers.md)
 
+- [Using the Dask gateway](using_the_dask_gateway.md)
+
 - [Computing indices with cf-python](cf_python.md)
 
 - [CDFTOOLS](https://github.com/CANARI-sprint/CDFTOOLS):  a diagnostic package written in fortran 90 for the analysis of NEMO model output, initialized in the frame of the DRAKKAR project (https://www.drakkar-ocean.eu/)
