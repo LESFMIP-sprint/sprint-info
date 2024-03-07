@@ -2,6 +2,20 @@
 
 The sprint will take place March 4-8, 2024 as a hybrid sprint, with each participating centre working together and then connecting to each other via zoom.  The goal of the sprint is to work together to kickstart analysis on the CANARI-LE data.
 
+## Useful links
+
+[participants list](https://docs.google.com/spreadsheets/d/1wfX17IQq4rdrSUl1sgKYj2pUmV_pl8qZBRGgCsq_x1U/edit#gid=0)
+
+[CANARI sprint GitHub Repositories](https://github.com/CANARI-sprint)
+
+[list of useful datasets on JASMIN](https://docs.google.com/spreadsheets/d/10T_VkuiszrUwWMmDl8TxcSI5vdEQnf1Z/edit?pli=1#gid=1315481671)
+
+[list of analysis useful to multiple people](https://docs.google.com/spreadsheets/d/1SDBcFaH3mWBIVluxx_irPIfmaR9x42rA/edit#gid=1072719862)
+ 
+[priority variables and variable names](https://ncas-cms.github.io/canari/metadata/20240229-canari-le-priority-variables.xlsx)
+
+[CANARI-LE information](https://ncas-cms.github.io/canari/)
+
 ## Schedule
 
 ## March 4, 2024:
@@ -68,16 +82,3 @@ The sprint will take place March 4-8, 2024 as a hybrid sprint, with each partici
 
 16:00-17:00:  highlights of the week
 
-## Useful links
-
-[participants list](https://docs.google.com/spreadsheets/d/1wfX17IQq4rdrSUl1sgKYj2pUmV_pl8qZBRGgCsq_x1U/edit#gid=0)
-
-[CANARI sprint GitHub Repositories](https://github.com/CANARI-sprint)
-
-[list of useful datasets on JASMIN](https://docs.google.com/spreadsheets/d/10T_VkuiszrUwWMmDl8TxcSI5vdEQnf1Z/edit?pli=1#gid=1315481671)
-
-[list of analysis useful to multiple people](https://docs.google.com/spreadsheets/d/1SDBcFaH3mWBIVluxx_irPIfmaR9x42rA/edit#gid=1072719862)
- 
-[priority variables and variable names](https://ncas-cms.github.io/canari/metadata/20240229-canari-le-priority-variables.xlsx)
-
-[CANARI-LE information](https://ncas-cms.github.io/canari/)
