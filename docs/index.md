@@ -6,12 +6,19 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 **Day 4**
 
+Amulya showed results which investigated the response of precipitation to changes in the jet at the end of day highlights meeting.  Here is a figure of the relationship between the JJA jet latitude (left) and the DJF jet speed and precipitation over the UK.
+
+![JET](assets/Amulya_jet.png)
+
+Wilson has been looking at precipitation of the UK, which he nicely showed at the end of day highlights meeting.  Here is his time series of the Standardised Precipitation Index (SPI) accumulated over 3 months (SPI-3)UK average compared with SPI calculated from observations (HadUK-Grid).
+
+![SPI](assets/Wilson_SPI.png)
+
+
 Paul has been busy looking at precipitation in the CANARI-LE and putting it into perspective with other LE.  The figures below show the MJJAS (NDJFM) precipitation for the Northern (Southern) hemisphere (see the #sprint-highlights Slack channel for more figures).
 
 ![precip](assets/precip.png)
 ![bias](assets/bias.png)
-
-
 
 Laura has been looking at the relationship between the winter (DJF) NAO/EAP and 2 m temperature and precipitation.  The figure below shows the results for 2 m temperature (see the #sprint-highlights Slack channel for more figures).
 
