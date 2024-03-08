@@ -4,6 +4,12 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 ## Highlights
 
+**Day 5**
+
+Motivated by Bablu's time series of heat fluxes over the sub polar gyre (SPG), Simon has been looking at the difference in air-sea heat from between the post-2000 period and 1970-89.  The key features are the weakening of heat loss (red colors) in the SPG which is potentially linked to the weakening of the AMOC found by Adam and Niamh. Process chain would be : weaker AMOC beings less warm water northwards, reduces SST and thus surface heat loss.  And secondly the increase in heat loss in the Arctic (blue) which is presumably related to sea ice decline exposing more of the ocean surface and thus enabling greater heat loss to the atmosphere.
+
+![HF](JoseySPRINTHeatFluxPlot.png)
+
 **Day 4**
 
 Amulya showed results which investigated the response of precipitation to changes in the jet at the end of day highlights meeting.  Here is a figure of the relationship between the JJA jet latitude (left) and the DJF jet speed and precipitation over the UK.
