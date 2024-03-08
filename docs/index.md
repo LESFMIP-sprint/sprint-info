@@ -4,6 +4,19 @@ As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Ar
 
 ## Highlights
 
+**Day 4**
+
+Paul has been busy looking at precipitation in the CANARI-LE and putting it into perspective with other LE.  The figures below show the MJJAS (NDJFM) precipitation for the Northern (Southern) hemisphere (see the #sprint-highlights Slack channel for more figures).
+
+![precip](assets/precip.png)
+![bias](assets/bias.png)
+
+
+
+Laura has been looking at the relationship between the winter (DJF) NAO/EAP and 2 m temperature and precipitation.  The figure below shows the results for 2 m temperature (see the #sprint-highlights Slack channel for more figures).
+
+![NAO_EAP](assets/laura_NOA_EAP.png)
+
 **Day 3**
 
 First results from Claire investigating sea surface temperature in cold air outbreak regions.
