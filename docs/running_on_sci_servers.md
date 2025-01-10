@@ -4,16 +4,16 @@ The JASMIN notebook service only has limited resources and might not be sufficie
 ### Logging on to the Sci servers
 First login to the JASMIN login server (replace <jasminusername> with your own username):
 
-`ssh -A <jasminusername>@login1.jasmin.ac.uk`
+`ssh -A <jasminusername>@login-01.jasmin.ac.uk`
 
 Do not forget to add the `-A` option to add your SSH key to the session.
 
-Then login to one of the sci servers, there are 8 of these in total called sci1-8.
+Then login to one of the sci servers, there are 7 of these in total called sci-ph-01, sci-ph-02 and sci-vm-0(1 to 5). The sci-ph systems are physical servers whereas sci-vm are virtual servers.
 
-`ssh sci6`
+`ssh sci-ph-01`
 
 Or this can all be wrapped up in one command using an SSH "jump host" with:
-`ssh -J <jasminusername>@login1.jasmin.ac.uk <jasminusername>@sci6`
+`ssh -J <jasminusername>@login-01.jasmin.ac.uk <jasminusername>@sci-ph-01`
 
 ### Anacionda, Miniconda or Micromamba?
 Unlike the Notebook server neither Conda or Mamba are installed by default on the Sci servers and we must install them ourselves. There are three possible options:
@@ -60,9 +60,9 @@ This will put a lot of text onto the screen, but at the bottom it will say somet
 ```
 The JupyterLab is now running on the sci server you are logged into and listening to requests on port 8889 (your port number might be different, pay attention to this!). But to connect to it we need to open another SSH session. Note that you must leave this SSH session/terminal window open, if you press ctrl+c or close it then the JupyterLab session will stop. To open another SSH session open another terminal and run:
 
-`ssh -J <jasminusername>@login1.jasmin.ac.uk -L 8889:localhost:8889 <jasminusername>@sci6`
+`ssh -J <jasminusername>@login-01.jasmin.ac.uk -L 8889:localhost:8889 <jasminusername>@sci-ph-01`
 
-This will bring up a new terminal logged into sci6, but it will also forward requests on your own computer's port 8889 to sci6's port 8889 allowing you to access your Jupyter server on sci6. Now open a web browser and paste in one of the URLs starting "http://" from the output from starting JupyterLab. 
+This will bring up a new terminal logged into sci-ph-01, but it will also forward requests on your own computer's port 8889 to sci-ph-01's port 8889 allowing you to access your Jupyter server on sci-ph-01. Now open a web browser and paste in one of the URLs starting "http://" from the output from starting JupyterLab. 
 
 ![Screenshot of JupyterLab running on sci6](assets/jupyter-sci-server.png)
 
