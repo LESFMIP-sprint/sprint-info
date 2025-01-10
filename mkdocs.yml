@@ -2,6 +2,7 @@ site_name: CANARI Sprint
 site_dir: public
 nav:
   - 'index.md'
+  - 'highlights.md'
   - 'data.md'
   - 'setup.md'
   - 'sprint.md'
@@ -10,3 +11,5 @@ nav:
 plugins:
   - search
   - print-site
+markdown_extensions:
+  - attr_list
