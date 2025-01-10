@@ -2,7 +2,7 @@
 
 This page contains all the pre-event setup required to prepare you to make the most of the event.  New items may appear on the list as the event gets closer.
 
-1. Sign-up for the event to make sure you are kept in the loop with the last information and see potential collaborators on the [spreadsheet](https://docs.google.com/spreadsheets/d/1wfX17IQq4rdrSUl1sgKYj2pUmV_pl8qZBRGgCsq_x1U/edit#gid=0).
+1. Sign-up for the event to make sure you are kept in the loop with the last information and see potential collaborators on the [spreadsheet](https://docs.google.com/spreadsheets/d/1_7pbhmaz5qXzKH4mwG5r1b7NrKhNDDKP-B-z_ldl_Z8/edit?gid=0#gid=0).
 
 2. Slack Workspace
 

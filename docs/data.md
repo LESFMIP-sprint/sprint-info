@@ -1,6 +1,6 @@
 # Data 
 
-The CANARI-LE is currently being run on ARCHER2 with data being stored on tape on JASMIN with some data being stored in the CANARI group workspace (gws).
+The CANARI-LE has now completed running on ARCHER2. The CANARI-LE consists of 40 ensemble members of both the CMIP6 historical simulation and SSP3-7.0.  Data is stored on tape in JASMIN and priority data in stored on the JASMIN CANARI group workspace (gws).
 
 ## Ensemble Details 
 
@@ -20,15 +20,11 @@ Land: Jules
 
 More information on the CANARI-LE can be found [here](https://ncas-cms.github.io/canari/).
 
-## State of Ensemble
-
-Currently running historical simulations, with 27 ensemble members completed and 13 running.  Detailed information on the state of the ensemble can be found [here](https://gws-access.jasmin.ac.uk/public/canari/production/canari-le-production-status.html).
-
 ## Data Access
 
 To access the CANARI-LE data available on JASMIN you need to apply for access to the CANARI gws through the [JASMIN accounts portal](https://accounts.jasmin.ac.uk/) under the my services button.
 
-An example set of data is currently uploaded onto the CANARI gws (/gws/nopw/j04/canari/users/reinhard/data/u-cy573-sample) and priority variables are in process of being downloaded from tape to JASMIN (/gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2).
+CANARI-LE data can be found here (/gws/nopw/j04/canari/shared/large-ensemble/priority/).  HIST2 contains the 40 historical ensemble members, 1950-2014, SSP370 the future projection ensemble members, 2015-2100, and HIST1 are the 4 historical ensemble members which were part of CMIP6, 1850-2014.
 
 The list of priority variables are on this [spreadsheet](https://ncas-cms.github.io/canari/metadata/20240229-canari-le-priority-variables.xlsx).  You can find the long names for the variables and the short names used in the netcdf files.  Please pay particular attention to the notes in red.
 

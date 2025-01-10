@@ -1,7 +1,7 @@
 # CANARI Sprint DOCUMENTATION
 ====================
 
-This project represents the documentation for the CANARA Sprint.
+This project represents the documentation for the CANARI Sprint.
 
 It was assembled based on the mkdocs package.
 
