@@ -44,7 +44,7 @@ If you want to run any code in the shared CANARI environment then you need to "a
 Your prompt should now change to start with `(/gws/smf/j04/canari/conda-env)` to indicate that this environment is now active. 
 
 ### Running a JupyterLab instance on a Sci server
-It is recommended that you use your own copy of CANARI environment for this. If you haven't already made one see the instructions in [tutorial 3 - Creating Your Own Conda Enviroment](/creating_your_own_conda_env/). Assuming you ran this tutorial you should have an environment called `canari`, go ahead and activate this by running:
+It is recommended that you use your own copy of CANARI environment for this. If you haven't already made one see the instructions in [tutorial 3 - Creating Your Own Conda Enviroment](creating_your_own_conda_env.md). Assuming you ran this tutorial you should have an environment called `canari`, go ahead and activate this by running:
 `micromamba activate canari`
 
 JupyterLab was already started and can be run with the command:
