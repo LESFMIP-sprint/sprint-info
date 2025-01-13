@@ -10,7 +10,7 @@ This page contains all the pre-event setup required to prepare you to make the m
 
     2. Join the appropriate channels on the CANARI Slack workspace, all channels relevant to the sprint will be prefaced with the word 'sprint'.  There are channels setup where you can get help for the sprint which will be monitored, they will be labeled starting 'sprint-help'.
 
-    3. Feel free to add channels to help collaborate your analysis during the sprint and make sure to label them with 'sprint'.
+    3. Feel free to add channels to help collaborate your analysis during the sprint and make sure to label them with 'sprint'.  Slack channels from the previous sprint will still be available and you are welcome to continue to use these.
 
 3. JASMIN - keep in mind it might take a few days to get your accounts approved
 
@@ -22,11 +22,9 @@ This page contains all the pre-event setup required to prepare you to make the m
 
         2. CANARI group workspace (gws)
 
-    3.  Please add your JASMIN user ID to the sign-up [spreadsheet](https://docs.google.com/spreadsheets/d/1wfX17IQq4rdrSUl1sgKYj2pUmV_pl8qZBRGgCsq_x1U/edit#gid=0), ASAP, the list of user IDs will be shared with JASMIN.
+    3. (optional) Link your JASMIN account with a CEDA account.  This will provide you with access to several datasets including ERA5 and CMIP data.
 
-    4. (optional) Link your JASMIN account with a CEDA account.  This will provide you with access to several datasets including ERA5 and CMIP data.
-
-    5. (optional) Set-up symbolic links to the CANARI gws to make it easier to find.  (i.e. on JASMIN $ln -s  /gws/nopw/j04/canari CANARI)
+    4. (optional) Set-up symbolic links to the CANARI gws to make it easier to find.  (i.e. on JASMIN $ln -s  /gws/nopw/j04/canari CANARI)
 
 4. ZOOM - communication during the sprint will be done via zoom, please make sure you are able to connect
 
