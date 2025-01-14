@@ -27,6 +27,14 @@ See [Configuring and Using the JASMIN Notebooks Service](jasmin_notebook_service
 
 ## General
 
+**How much am I expected to participate?**
+
+You can participate as much or little as you like, from listening to the highlights to actively taking part all week.
+
+**Am I limited to analysing with the future projection, SSP3-7.0, ensemble data?**
+
+While the intension of the second sprint is to kickstart the analysis of the CANARI-LE future projection data, it is not limited to this.  Everyone is more than welcome to investigate the historical CANARI-LE data.
+
 **What should I do if I want to share about the sprint on social media?**
 
 Please tag @CANARI_Science in you X/Twitter posts.  @CANARI_Science will all be tweeting updates throughout the event, please feel free to retweet those as well.

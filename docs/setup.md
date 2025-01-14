@@ -10,7 +10,7 @@ This page contains all the pre-event setup required to prepare you to make the m
 
     2. Join the appropriate channels on the CANARI Slack workspace, all channels relevant to the sprint will be prefaced with the word 'sprint'.  There are channels setup where you can get help for the sprint which will be monitored, they will be labeled starting 'sprint-help'.
 
-    3. Feel free to add channels to help collaborate your analysis during the sprint and make sure to label them with 'sprint'.  Slack channels from the previous sprint will still be available and you are welcome to continue to use these.
+    3. Feel free to add channels to help collaborate your analysis during the sprint and make sure to label them with 'sprint'.
 
 3. JASMIN - keep in mind it might take a few days to get your accounts approved
 
@@ -32,7 +32,7 @@ This page contains all the pre-event setup required to prepare you to make the m
 
     1.  Several work packages have been actively making plans on what they would like to do.  If you are unsure of what analysis you are planning on doing in the first instance speak with your work package leader and/or centre lead (you can see who this is in the sign-up spread sheet).  If that fails contact someone from the signup spreadsheet with similar interests to you.
 
-    2. Take a look at the sample data on JASMIN to make sure the data you want to work with is there and looks correct.  The sample data can be found here on JASMIN:  /gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2
+    2. Take a look at the data on JASMIN to make sure the data you want to work with is there and looks correct.  The data can be found here on JASMIN:  /gws/nopw/j04/canari/shared/large-ensemble/priority/ ([for more details on the data](data.md))
 
 6.  Shared datasets and shared analysis
 
