@@ -80,7 +80,7 @@ Overview of the week (Jenny)
 
 9:45: Zoom channel opens for the day
 
-10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: TBD) 
+10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Xiaoyan)
 
 16:00-17:00:  highlights of the week (chair: TBD)
 
