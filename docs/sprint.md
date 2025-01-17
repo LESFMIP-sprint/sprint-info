@@ -22,23 +22,27 @@ The sprint will take place January 27-31, 2025 as a hybrid sprint, with each par
 
 9:45: Zoom channel opens for the day
 
-10:00-10:10: Good morning and Welcome (chair: Jenny)
+10:00-12:30: 
 
-10:10-10:20: Overview of CANARI (Len)
+Good morning and Welcome (chair: Jenny)
 
-10:20-10:35: CANARI-LE overview (Reinhard)
+Overview of CANARI (Len)
 
-10:35-10:40: Event Communication Plans (Ben)
+CANARI-LE overview (Reinhard)
 
-10:40-10:45: JASMIN Support Introduction (Fatima and ?)
+Ensemble Member Selection (Jo)
 
-10:45-10:50: Research Software Engineer Introduction (Colin)
+Event Communication Plans (Ben)
 
-10:50-11:05: Around the Zoom room Introductions (Centre Coordinators)
+JASMIN Support Introduction (Fatima, ? and ?)
 
-11:05-11:30: Overview of the week (Jenny)
+Research Software Engineer Introduction (Colin, Esther and Jonathan)
 
-11:30-12:30: open video chat for help getting onto JASMIN, CANARI gws and jupyter notebooks
+Around the Zoom room Introductions (Centre Coordinators)
+
+Overview of the week (Jenny)
+
+14:30-15:00:  coding best practices (TBD)
 
 16:30-17:00:  highlights of the day (chair: TBD)
 
@@ -47,7 +51,9 @@ The sprint will take place January 27-31, 2025 as a hybrid sprint, with each par
 
 9:45: Zoom channel opens for the day
 
-10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: TBD) 
+10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: TBD)
+
+11:00-11:30:  Dask example script tutorial (Esther) 
 
 16:30-17:00:  highlights of the day (chair: Reinhard)
 
@@ -58,7 +64,7 @@ The sprint will take place January 27-31, 2025 as a hybrid sprint, with each par
 
 10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Ben) 
 
-16:30-17:00:  highlights of the day (chair: TBD)
+16:30-17:00:  highlights of the day (chair: Bablu)
 
 
 ## Thursday:
