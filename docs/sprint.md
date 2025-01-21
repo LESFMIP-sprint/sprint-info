@@ -30,8 +30,6 @@ Overview of CANARI (Len)
 
 CANARI-LE overview (Reinhard)
 
-Ensemble Member Selection (Jo)
-
 Event Communication Plans (Ben)
 
 JASMIN Support Introduction (Fatima, ? and ?)
@@ -42,18 +40,26 @@ Around the Zoom room Introductions (Centre Coordinators)
 
 Overview of the week (Jenny)
 
-14:30-15:00:  coding best practices (TBD)
+13:30-15:00:  Looking for Contibutions    
 
-16:30-17:00:  highlights of the day (chair: TBD)
+Ensemble Member Selection for  NAAC (Jo)
+
+Storylines (Hazel and Wilson)
+
+16:30-17:00:  highlights of the day (chair: David)
 
 
 ## Tuesday:
 
 9:45: Zoom channel opens for the day
 
-10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: TBD)
+10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Scott)
 
-11:00-11:30:  Dask example script tutorial (Esther) 
+11:00-12:00:  Tips from the Research Software Engineers
+
+Coding best practices (TBD)
+
+Dask example script tutorial (Esther) 
 
 16:30-17:00:  highlights of the day (chair: Reinhard)
 
@@ -71,7 +77,7 @@ Overview of the week (Jenny)
 
 9:45: Zoom channel opens for the day
 
-10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: TBD) 
+10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Dan) 
 
 16:30-17:00:  highlights of the day (chair: Len)
 
