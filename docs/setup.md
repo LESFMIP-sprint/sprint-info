@@ -24,7 +24,9 @@ This page contains all the pre-event setup required to prepare you to make the m
 
     3. (optional) Link your JASMIN account with a CEDA account.  This will provide you with access to several datasets including ERA5 and CMIP data.
 
-    4. (optional) Set-up symbolic links to the CANARI gws to make it easier to find.  (i.e. on JASMIN $ln -s  /gws/nopw/j04/canari CANARI)
+    4. (optional) If you want to give dask during the sprint you can signup for the additional service, dask gateway through the JASMIN accounts portal.
+  
+    5. (optional) If you want to try processing of data using GPUs you need to signup for the additional service, orchid through the JASMIN accounts portal.
 
 4. ZOOM - communication during the sprint will be done via zoom, please make sure you are able to connect
 
