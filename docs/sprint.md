@@ -16,9 +16,9 @@ The sprint will take place January 27-31, 2025 as a hybrid sprint, with each par
 
 [CANARI-LE information](https://ncas-cms.github.io/canari/)
 
-## Tentative Schedule, subject to change
+## Schedule
 
-## Monday:
+## Monday (Jan. 27):
 
 9:45: Zoom channel opens for the day
 
@@ -32,24 +32,24 @@ CANARI-LE overview (Reinhard)
 
 Event Communication Plans (Ben)
 
+Around the Zoom room Introductions (Centre Coordinators)
+
 JASMIN Support Introduction (Fatima, ? and ?)
 
 Research Software Engineer Introduction (Colin, Esther and Jonathan)
 
-Around the Zoom room Introductions (Centre Coordinators)
-
 Overview of the week (Jenny)
 
-13:30-15:00:  Looking for Contibutions    
+13:30-15:00:  How can I help?   
 
-Ensemble Member Selection for  NAAC (Jo)
+Ensemble Member Selection for NAAC (Jo)
 
 Storylines (Hazel and Wilson)
 
 16:30-17:00:  highlights of the day (chair: David)
 
 
-## Tuesday:
+## Tuesday (Jan. 28):
 
 9:45: Zoom channel opens for the day
 
@@ -57,14 +57,16 @@ Storylines (Hazel and Wilson)
 
 11:00-12:00:  Tips from the Research Software Engineers
 
-Coding best practices (TBD)
+Coding best practices (Colin and Esther)
 
-Dask example script tutorial (Esther) 
+Dask example script tutorial (Esther)
+
+14:00:  cf-python: A data analysis package designed for CANARI (David)
 
 16:30-17:00:  highlights of the day (chair: Reinhard)
 
 
-## Wednesday:
+## Wednesday (Jan. 29):
 
 9:45: Zoom channel opens for the day
 
@@ -73,7 +75,7 @@ Dask example script tutorial (Esther)
 16:30-17:00:  highlights of the day (chair: Bablu)
 
 
-## Thursday:
+## Thursday (Jan. 30):
 
 9:45: Zoom channel opens for the day
 
@@ -82,11 +84,11 @@ Dask example script tutorial (Esther)
 16:30-17:00:  highlights of the day (chair: Len)
 
 
-## Friday:
+## Friday (Jan. 31):
 
 9:45: Zoom channel opens for the day
 
 10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Xiaoyan)
 
-16:00-17:00:  highlights of the week (chair: TBD)
+16:00-17:00:  highlights of the week (chair: Marilena)
 
