@@ -2,6 +2,8 @@
 
 ## January 2025
 
+If you have any plots you would like to see featured on this page or present during a highlights session please post a message to the #sprint-highlights slack channel.
+
 Updates begin January 27, 2025!
 
 **Day 1**
