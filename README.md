@@ -1,5 +1,4 @@
 # CANARI Sprint DOCUMENTATION
-====================
 This project represents the documentation for the CANARI Sprint.
 
 
