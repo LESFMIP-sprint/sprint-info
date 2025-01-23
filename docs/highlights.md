@@ -4,6 +4,11 @@
 
 Updates begin January 27, 2025!
 
+**Day 1**
+Have a great plot from your analysis today? Drop it into the Slack [#sprint-highlights](https://canariworkspace.slack.com/archives/C06N0TGESJD/p1737646626614279) channel!
+
+
+
 ## March 2024
 
 **Day 5**
