@@ -18,7 +18,9 @@ Or this can all be wrapped up in one command using an SSH "jump host" with:
 ### Activating the shared CANARI environment
 Conda is available on the Sci servers through the jaspy module. If this is the first time you have used conda on the sci servers, you will need to run `module load jaspy` followed by `conda init`. You'll then need to either launch a new shell session or source your `.bashrc` file. After this, your prompt should start with `(base)`. 
 If you want to run any code in the shared CANARI environment then you need to "activate" that enviroment. To do this run:
+
 `conda activate /gws/smf/j04/canari/conda-env`
+
 Your prompt should now change to start with `(/gws/smf/j04/canari/conda-env)` to indicate that this environment is now active. 
 
 ### Running a JupyterLab instance on a Sci server
