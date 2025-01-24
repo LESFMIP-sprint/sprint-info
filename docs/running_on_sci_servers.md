@@ -15,32 +15,10 @@ Then login to one of the sci servers, there are 7 of these in total called sci-p
 Or this can all be wrapped up in one command using an SSH "jump host" with:
 `ssh -J <jasminusername>@login-01.jasmin.ac.uk <jasminusername>@sci-ph-01`
 
-### Anacionda, Miniconda or Micromamba?
-Unlike the Notebook server neither Conda or Mamba are installed by default on the Sci servers and we must install them ourselves. There are three possible options:
-
-1. [Anaconda](https://www.anaconda.com/download) - A heavyweight distribution with many popular packages pre-installed. This is about 1 gigabyte in size.
-2. [Miniconda](https://docs.anaconda.com/free/miniconda/index.html) - A lightweight dsitribution with only a few packages such as Python pre-installed. This is about 140 megabytes in size.
-3. [Micromamba](https://github.com/mamba-org/micromamba-releases) - The mamba package manager and nothing else, we can use this to install Python and any other packages we need. This is only 14 megabytes.
-
-All of these provide us with the conda or mamba package manager and let us download more packages if needed. Since it is the smallest and simplest, we'll use micromamba for this example. Feel free to follow the links above and use Anaconda or Miniconda if you prefer. 
-
-### Installing Micromamba
- To download Micromamba run the following:
-`"${SHELL}" <(curl -L https://micro.mamba.pm/install.sh)`
-
-This will then ask several questions about configuring Micromamba:
-
- - When prompted for a micromaba binary folder choose the default choice of ~/.local/bin by pressing enter.
- - Say yes to "Init shell (bash)"
- - Say yes to "Configure conda-forge"
- - For the Prefix Location put "~/.conda", this will store mamba environments in the same location as the notebook service was using. Micromamba will be compaitble with them.
- - After micromamba has finished installing you will either need to logout and back in again or refresh your shell by typing `source ~/.bashrc`. 
-
-At this point you should be able to run the micromamba command as a substitute for any of the mamba/conda commands we've used before. To test this run `micromamba env list` and you should get a list of all of your environments that you've used on the notebook service. 
-
 ### Activating the shared CANARI environment
-If you want to run any code in the shared CANARI environment then you need to "activate" that enviroment (or use the micromamba run command). To do this run:
-`micromamba activate -p /gws/smf/j04/canari/conda-env`
+Conda is available on the Sci servers through the jaspy module. If this is the first time you have used conda on the sci servers, you will need to run `module load jaspy` followed by `conda init`. You'll then need to either launch a new shell session or source your `.bashrc` file. After this, your prompt should start with `(base)`. 
+If you want to run any code in the shared CANARI environment then you need to "activate" that enviroment. To do this run:
+`conda activate /gws/smf/j04/canari/conda-env`
 Your prompt should now change to start with `(/gws/smf/j04/canari/conda-env)` to indicate that this environment is now active. 
 
 ### Running a JupyterLab instance on a Sci server
