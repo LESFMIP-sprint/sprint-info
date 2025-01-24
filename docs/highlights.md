@@ -2,7 +2,8 @@
 
 ## January 2025
 
-If you have any plots you would like to see featured on this page or present during a highlights session please post a message to the #sprint-highlights slack channel.
+If you have any plots you would like to see featured on this page or present during a highlights session please post a message to the [#sprint-highlights](https://canariworkspace.slack.com/archives/C06N0TGESJD/p1737646626614279) channel!  We'll then add them here at the end of the day.
+ slack channel.
 
 Updates begin January 27, 2025!
 
