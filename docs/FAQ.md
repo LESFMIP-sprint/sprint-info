@@ -15,7 +15,7 @@ You can see all the channels which already exist in the CANARI Slack workspace b
 Everyone is welcome to make their own slack channels to help collaborate during the sprint.  When creating a new channel specifically for the sprint please name it starting with 'sprint-'.
 
 
-## Python
+## Python
 
 **Do I have to use python?**
 
@@ -30,6 +30,10 @@ See [Configuring and Using the JASMIN Notebooks Service](jasmin_notebook_service
 **How much am I expected to participate?**
 
 You can participate as much or little as you like, from listening to the highlights to actively taking part all week.
+
+**Not sure what to work on**
+
+Take a look at the participant list and connect with someone who has similar interests to you.  Additionally tune in to Monday afternoon's talks on storylines and ensemble member selection.
 
 **Am I limited to analysing with the future projection, SSP3-7.0, ensemble data?**
 
