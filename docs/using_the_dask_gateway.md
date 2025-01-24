@@ -27,3 +27,7 @@ In the files view in Jupyter Lab go to your copy of tutorials repository, click 
 Two example files called `dask-example1.ipynb` and `dask-example2.ipynb` should appear. Open these, ensure they are using the CANARI-dask kernel and launch them. 
 The first example demonstrates the Dask Delayed feature where calculations are not executed until their result is requested. 
 The second example shows the futures feature where tasks are executed immediately, but anything wanting to access to the result will be forced to wait until the calculation is complete.
+
+### Accessing the Dask gateway from the sci servers
+You will need to generate a token for accessing the Dask gateway and place this in `~/.config/dask/gateway.yaml`. See the [JASMIN Dask documentation](https://help.jasmin.ac.uk/docs/interactive-computing/dask-gateway/#elsewhere-on-jasmin) for details on how generate a token and the format of the config file.
+
