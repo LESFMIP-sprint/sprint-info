@@ -18,13 +18,13 @@ This page contains all the pre-event setup required to prepare you to make the m
 
     2. Sign-up for the required JASMIN services through the [accounts portal](https://accounts.jasmin.ac.uk/).
 
-        1. Jasmin log-in account
+        1. JASMIN log-in account
 
         2. CANARI group workspace (gws)
 
     3. (optional) Link your JASMIN account with a CEDA account.  This will provide you with access to several datasets including ERA5 and CMIP data.
 
-    4. (optional) If you want to give dask during the sprint you can signup for the additional service, dask gateway through the JASMIN accounts portal.
+    4. (optional) If you want to give the [JASMIN dask gateway](https://help.jasmin.ac.uk/docs/interactive-computing/dask-gateway/) a try during the sprint you can signup for the additional service, dask gateway, through the JASMIN accounts portal.
   
     5. (optional) If you want to try processing of data using GPUs you need to signup for the additional service, orchid through the JASMIN accounts portal.
 
