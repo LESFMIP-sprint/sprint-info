@@ -1,5 +1,5 @@
 ## Running on the JASMIN Sci Servers
-The JASMIN notebook service only has limited resources and might not be sufficient for some larger datasets. One alternative is to use the Sci servers. These are 8 shared servers which JASMIN users can login to and run code on.
+The JASMIN notebook service only has limited resources and might not be sufficient for some larger datasets. One alternative is to use the Sci servers. These are 7 shared servers which JASMIN users can login to and run code on.
 
 ### Logging on to the Sci servers
 First login to the JASMIN login server (replace <jasminusername> with your own username):
