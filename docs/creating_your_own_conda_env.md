@@ -4,11 +4,13 @@
 
 The provided environment (located in /gws/smf/j04/canari/conda-env) contains many packages you are likely to need, but doesn't contain everything. As this is a shared environment we can't allow everyone to install new packages into it. If you need extra packages you will have to create your own environment.
 
-### Creating an environment from the JASMIN Jupyter Notebook Service
+### Creating an environment from JASMIN 
+
+If you are running inside terminal on the notebook service you will already have conda (and mamba) in your path. If you are running on a sci server you may need to load the `jaspy` module by running `module load jaspy` in order to have the conda/mamba commands in your path.
 
 It is assumed you have cloned the tutorials Github repository into a directory called tutorials, if you haven't see the "Getting the CANARI example code" section of tutorial 2 (Configuring and Using the JASMIN Notebooks Service). 
 
-* In a terminal on the notebook service (note: this will not work on a Sci server) run the command `mamba env create -n canari -f ~/tutorials/environment.yml`. We are using the command `mamba` instead of `conda`. Mamba is a replacement for conda that can resolve the dependencies for an enviroment much faster. 
+* In a terminal run the command `mamba env create -n canari -f ~/tutorials/environment.yml`. We are using the command `mamba` instead of `conda`. Mamba is a replacement for conda that can resolve the dependencies for an enviroment much faster. 
 * This will take about 10 minutes to execute. After it is complete, verify it exists by running: `mamba env list`, you should see something similar to the following:
 ```
 # conda environments:
@@ -17,7 +19,7 @@ It is assumed you have cloned the tutorials Github repository into a directory c
 canari                   /home/users/colinsau/.conda/envs/canari
 ```
 * To make the enviroment visible to Jupyter Lab run ("CANARI-mine" is the name it will show in the Jupyter Launcher, feel free to change this): `mamba run -n canari python -m ipykernel install --user --name CANARI-mine`.
-* After about one minute a new icon called "CANARI-mine" should apear in the Jupyter launcher.
+* After about one minute a new icon called "CANARI-mine" should apear in the Jupyter launcher on the notebook service.
 
 ### Adding extra packages to your environment
 #### Installing extra packages with Mamba
