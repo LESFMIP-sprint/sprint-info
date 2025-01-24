@@ -12,7 +12,7 @@ The figure above shows the 2023 JJAS anomalously warm Sea Surface temperatures f
 
 We will shortly be deciding which LEs to force our new ocean model configurations with. We want to select wisely, based on having looked at how the LE ice, ocean and atmosphere fields evolve in the future.
 
-![MG](assets/modelgrids.jpg)
+<img src="assets/modelgrids.jpg" width=400 height=auto>
  
 Good work has already started on calculating useful ice (e.g. sea ice extent), ocean (AMOC, OHC, transports) and atmosphere (NAO, AO) indices over the historical period, but we need some insight into the future. This Sprint is an opportunity to bring this together, coherently across the project and produce sets of summary figures (e.g. Taylor diagrams) that will inform our choice.
  
@@ -20,9 +20,9 @@ Tune in Monday afternoon to find out whether you are already planning on analysi
 
 ## Storylines
 
-![MG](assets/storylines.png)
+Would you like to learn more about storylines, how the CANARI-LE is being used and how your work might fit in?  Tune in Monday afternoon to join the discussion.
 
-Tune in Monday afternoon to join in the discussion.
+<img src="assets/storylines.png" width=350 height=auto>
 
 ## Publications
 
