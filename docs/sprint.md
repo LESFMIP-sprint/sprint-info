@@ -28,7 +28,7 @@ Good morning and Welcome (chair: Jenny)
 
 Overview of CANARI (Len)
 
-CANARI-LE overview (Reinhard)
+CANARI-LE overview (Oscar)
 
 Event Communication Plans (Ben)
 
