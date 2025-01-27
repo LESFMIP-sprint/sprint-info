@@ -18,6 +18,8 @@ Some simple tutorials to get you started analysing the CANARI-LE.
 
 - **Data Analysis Guides:** Access our data analysis guides hosted on the [tutorials repository](https://github.com/CANARI-sprint/tutorials).
 
+- [Github collaborative working tutorial](git_tutorial.md)
+
 To try these tutorials independently, clone the repository in JASMIN with the following commands:
 
 ```
