@@ -20,33 +20,23 @@ The sprint will take place January 27-31, 2025 as a hybrid sprint, with each par
 
 ## Monday (Jan. 27):
 
- - **9:45:** Zoom channel opens for the day
+  - **9:45:** Zoom channel opens for the day
 
- - **10:00-12:30: Introduction** 
+  - **10:00-12:30: Introduction** 
+     - Good morning and Welcome (chair: Jenny)
+     - Overview of CANARI (Len)
+     - CANARI-LE overview (Oscar)
+     - Event Communication Plans (Ben)
+     - Around the Zoom room Introductions (Centre Coordinators)
+     - JASMIN Support Introduction (Fatima, ? and ?)
+     - Research Software Engineer Introduction (Colin, Esther and Jonathan)
+     - Overview of the week (Jenny)
 
-   - Good morning and Welcome (chair: Jenny)
+ - **13:30-15:00:  How can I help?**
+    - Ensemble Member Selection for NAAC (Jo)
+    - Storylines (Hazel and Wilson)
 
-   - Overview of CANARI (Len)
-
-   - CANARI-LE overview (Oscar)
-
-   - Event Communication Plans (Ben)
-
-   - Around the Zoom room Introductions (Centre Coordinators)
-
-   - JASMIN Support Introduction (Fatima, ? and ?)
-
-   - Research Software Engineer Introduction (Colin, Esther and Jonathan)
-
-   - Overview of the week (Jenny)
-
-- **13:30-15:00:  How can I help?**
-
-   - Ensemble Member Selection for NAAC (Jo)
-   - Storylines (Hazel and Wilson)
-
-- **16:30-17:00:**  highlights of the day (chair: David)
-
+ - **16:30-17:00:**  highlights of the day (chair: David)
 
 ## Tuesday (Jan. 28):
 
