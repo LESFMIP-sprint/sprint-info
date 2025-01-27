@@ -20,75 +20,57 @@ The sprint will take place January 27-31, 2025 as a hybrid sprint, with each par
 
 ## Monday (Jan. 27):
 
-9:45: Zoom channel opens for the day
+ - **9:45:** Zoom channel opens for the day
 
-10:00-12:30: 
+ - **10:00-12:30: Introduction** 
 
-Good morning and Welcome (chair: Jenny)
+   - Good morning and Welcome (chair: Jenny)
 
-Overview of CANARI (Len)
+   - Overview of CANARI (Len)
 
-CANARI-LE overview (Oscar)
+   - CANARI-LE overview (Oscar)
 
-Event Communication Plans (Ben)
+   - Event Communication Plans (Ben)
 
-Around the Zoom room Introductions (Centre Coordinators)
+   - Around the Zoom room Introductions (Centre Coordinators)
 
-JASMIN Support Introduction (Fatima, ? and ?)
+   - JASMIN Support Introduction (Fatima, ? and ?)
 
-Research Software Engineer Introduction (Colin, Esther and Jonathan)
+   - Research Software Engineer Introduction (Colin, Esther and Jonathan)
 
-Overview of the week (Jenny)
+   - Overview of the week (Jenny)
 
-13:30-15:00:  How can I help?   
+- **13:30-15:00:  How can I help?**
 
-Ensemble Member Selection for NAAC (Jo)
+   - Ensemble Member Selection for NAAC (Jo)
+   - Storylines (Hazel and Wilson)
 
-Storylines (Hazel and Wilson)
-
-16:30-17:00:  highlights of the day (chair: David)
+- **16:30-17:00:**  highlights of the day (chair: David)
 
 
 ## Tuesday (Jan. 28):
 
-9:45: Zoom channel opens for the day
-
-10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Scott)
-
-11:00-12:00:  Tips from the Research Software Engineers
-
-Coding best practices (Colin and Esther)
-
-Dask example script tutorial (Esther)
-
-14:00:  cf-python: A data analysis package designed for CANARI (David)
-
-16:30-17:00:  highlights of the day (chair: Reinhard)
-
+ - **9:45:** Zoom channel opens for the day
+ - **10:00-10:30:**  Good morning, sharing of highlights, known issues and good to knows (chair: Scott)
+ - **11:00-12:00:  Tips from the Research Software Engineers**
+    - Coding best practices (Colin and Esther)
+    - Dask example script tutorial (Esther)
+ - **14:00:**  cf-python: A data analysis package designed for CANARI (David)
+ - **16:30-17:00:**  highlights of the day (chair: Reinhard)
 
 ## Wednesday (Jan. 29):
 
-9:45: Zoom channel opens for the day
-
-10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Ben) 
-
-16:30-17:00:  highlights of the day (chair: Bablu)
-
+ - **9:45:** Zoom channel opens for the day
+ - **10:00-10:30:**  Good morning, sharing of highlights, known issues and good to knows (chair: Ben) 
+ - **16:30-17:00:**  highlights of the day (chair: Bablu)
 
 ## Thursday (Jan. 30):
 
-9:45: Zoom channel opens for the day
-
-10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Dan) 
-
-16:30-17:00:  highlights of the day (chair: Len)
-
+ - **9:45:** Zoom channel opens for the day
+ - **10:00-10:30:**  Good morning, sharing of highlights, known issues and good to knows (chair: Dan) 
+ - **16:30-17:00:**  highlights of the day (chair: Len)
 
 ## Friday (Jan. 31):
-
-9:45: Zoom channel opens for the day
-
-10:00-10:30:  Good morning, sharing of highlights, known issues and good to knows (chair: Xiaoyan)
-
-16:00-17:00:  highlights of the week (chair: Marilena)
-
+  - **9:45:** Zoom channel opens for the day
+  - **10:00-10:30:**  Good morning, sharing of highlights, known issues and good to knows (chair: Xiaoyan)
+  - **16:00-17:00:**  highlights of the week (chair: Marilena)
