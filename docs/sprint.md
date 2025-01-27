@@ -4,17 +4,17 @@ The sprint will take place January 27-31, 2025 as a hybrid sprint, with each par
 
 ## Useful links
 
-[participants list](https://docs.google.com/spreadsheets/d/1_7pbhmaz5qXzKH4mwG5r1b7NrKhNDDKP-B-z_ldl_Z8/edit?gid=0#gid=0)
+ - [participants list](https://docs.google.com/spreadsheets/d/1_7pbhmaz5qXzKH4mwG5r1b7NrKhNDDKP-B-z_ldl_Z8/edit?gid=0#gid=0)
 
-[CANARI sprint GitHub Repositories](https://github.com/CANARI-sprint)
+ - [CANARI sprint GitHub Repositories](https://github.com/CANARI-sprint)
 
-[list of useful datasets on JASMIN](https://docs.google.com/spreadsheets/d/10T_VkuiszrUwWMmDl8TxcSI5vdEQnf1Z/edit?pli=1#gid=1315481671)
+ - [list of useful datasets on JASMIN](https://docs.google.com/spreadsheets/d/10T_VkuiszrUwWMmDl8TxcSI5vdEQnf1Z/edit?pli=1#gid=1315481671)
 
-[list of analysis useful to multiple people](https://docs.google.com/spreadsheets/d/1SDBcFaH3mWBIVluxx_irPIfmaR9x42rA/edit#gid=1072719862)
+ - [list of analysis useful to multiple people](https://docs.google.com/spreadsheets/d/1SDBcFaH3mWBIVluxx_irPIfmaR9x42rA/edit#gid=1072719862)
  
-[priority variables and variable names](https://ncas-cms.github.io/canari/metadata/20240229-canari-le-priority-variables.xlsx)
+ - [priority variables and variable names](https://ncas-cms.github.io/canari/metadata/20240229-canari-le-priority-variables.xlsx)
 
-[CANARI-LE information](https://ncas-cms.github.io/canari/)
+ - [CANARI-LE information](https://ncas-cms.github.io/canari/)
 
 ## Schedule
 
