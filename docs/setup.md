@@ -24,7 +24,7 @@ This page contains all the pre-event setup required to prepare you to make the m
 
     3. (optional) Link your JASMIN account with a CEDA account.  This will provide you with access to several datasets including ERA5 and CMIP data.
 
-    4. (optional) If you want to give the [JASMIN dask gateway](https://help.jasmin.ac.uk/docs/interactive-computing/dask-gateway/) a try during the sprint you can signup for the additional service, dask gateway, through the JASMIN accounts portal.
+    4. (optional) If you want to give the dask gateway a try during the sprint you can signup on the [JASMIN dask gateway page](https://help.jasmin.ac.uk/docs/interactive-computing/dask-gateway/). 
   
     5. (optional) If you want to try processing of data using GPUs you need to signup for the additional service, orchid through the JASMIN accounts portal.
 
