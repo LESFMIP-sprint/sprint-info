@@ -17,7 +17,7 @@ Jon got off to a running start with a figure of Subpolar North Atlantic SST chan
 
 Harry has also plotted the AMOC on z and sigma for 2015 for ensemble member 1:
 
-
+![AMOC](assets/Harry_canari_2015_z_AMOC.png) ![AMOC](assets/Harry_canari_2015_sigma_AMOC.png)
 
 ## March 2024
 
