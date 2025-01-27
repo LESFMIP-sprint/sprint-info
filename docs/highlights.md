@@ -15,6 +15,10 @@ Jon got off to a running start with a figure of Subpolar North Atlantic SST chan
 
 ![JS](assets/jon_sst.png)
 
+Harry has also plotted the AMOC on z and sigma for 2015 for ensemble member 1:
+
+
+
 ## March 2024
 
 **Day 5**
