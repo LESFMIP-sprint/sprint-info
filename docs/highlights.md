@@ -7,11 +7,13 @@ If you have any plots you would like to see featured on this page or present dur
 
 Updates begin January 27, 2025!
 
-**Day 1**
-
 Have a great plot from your analysis today? Drop it into the Slack [#sprint-highlights](https://canariworkspace.slack.com/archives/C06N0TGESJD/p1737646626614279) channel!  We'll then add them here at the end of the day.
 
+**Day 1**
 
+Jon got off to a running start with a figure of Subpolar North Atlantic SST changes relative to 1950-1979.
+
+![JS](assets/jon_sst.png)
 
 ## March 2024
 
