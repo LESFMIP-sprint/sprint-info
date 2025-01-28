@@ -21,12 +21,13 @@ There are some extra packages that aren't in the main CANARI environment that yo
 
 ### Running the examples
 
-There are two dask examples in the tutorials git repository. If you cloned the repository before these were added (end of March 6th) then you'll need to run a git pull operation to bring in the latest changes.
+There are three dask examples in the tutorials git repository. If you cloned the repository before these were added (January 28th 2025) then you'll need to run a git pull operation to bring in the latest changes.
 In the files view in Jupyter Lab go to your copy of tutorials repository, click on the Git menu and choose "Pull from Remote". Or you can navigate to this directory in the terminal and type the command `git pull`.
 
-Two example files called `dask-example1.ipynb` and `dask-example2.ipynb` should appear. Open these, ensure they are using the CANARI-dask kernel and launch them. 
+Three example files called `dask-example1.ipynb`, `dask-example2.ipynb` and `dask-example-xarray.ipynb` should appear. Open these, ensure they are using the CANARI-dask kernel and launch them. 
 The first example demonstrates the Dask Delayed feature where calculations are not executed until their result is requested. 
 The second example shows the futures feature where tasks are executed immediately, but anything wanting to access to the result will be forced to wait until the calculation is complete.
+The third example does use the dask gateway, but doesn't use dask directly. Instead it aims to replicate a more typical use of dask for this sprint - it uses [xarray](https://docs.xarray.dev/en/stable/index.html), which uses dask as long as it is installed, with some CANARI data to do some basic calculations and plotting. See [this page](https://docs.xarray.dev/en/stable/user-guide/dask.html) for more information about how dask is integrated in xarray. 
 
 ### Accessing the Dask gateway from the sci servers
 You will need to generate a token for accessing the Dask gateway and place this in `~/.config/dask/gateway.yaml`. See the [JASMIN Dask documentation](https://help.jasmin.ac.uk/docs/interactive-computing/dask-gateway/#elsewhere-on-jasmin) for details on how generate a token and the format of the config file.
