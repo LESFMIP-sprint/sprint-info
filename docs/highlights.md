@@ -27,6 +27,11 @@ Jake has produced a couple of sea ice plots. Time series of September extent 195
 
 ![SeaIce](assets/Jake_ssp370_time_series_and_year_ice_free.png)
 
+Ollie has calculated the RAPID 26.5N diagnostics using an updated version of the METRIC Python package (https://github.com/oj-tooth/metric/) originally developed at NCAR for all 40 ensemble members from 1950 (HIST2) to 2099 (SSP37). These show the observational-equivalent (using RAPID array methods) MOCz and MHT ensemble mean and spread time series. 
+
+![RAPID](assets/Ollie_RAPID_MOC.png)
+![RAPID](assets/Ollie_RAPID_MHT.png)
+
 ## March 2024
 
 **Day 5**
