@@ -149,7 +149,7 @@ different changes to each copy.
 
 When the second person tries to push changes to Github they will see something like this error:
 ```output
-To git@github.com:NOC-OI/favourite-places.git
+To git@github.com:CANARI-sprint/git-tutorial.git
  ! [rejected]        main -> main (fetch first)
 error: failed to push some refs to 'git@github.com:CANARI-sprint/git-tutorial.git'
 hint: Updates were rejected because the remote contains work that you do
