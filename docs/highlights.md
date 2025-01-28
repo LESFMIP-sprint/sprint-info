@@ -19,6 +19,14 @@ Harry has also plotted the AMOC on z and sigma for 2015 for ensemble member 1:
 
 ![AMOC](assets/Harry_canari_2015_z_AMOC.png) ![AMOC](assets/Harry_canari_2015_sigma_AMOC.png)
 
+**Day 2**
+
+
+
+Jake has produced a couple of sea ice plots. Time series of September extent 1950–2099 and year of first ("practically") seasonally ice-free Arctic in comparison to CMIP6 models. The LE is on the pessimistic end of CMIP6 projections for the Arctic under SSP3-7.0.**
+
+![SeaIce](assets/Jake_ssp370_time_series_and_year_ice_free.png)
+
 ## March 2024
 
 **Day 5**
