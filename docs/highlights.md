@@ -36,6 +36,10 @@ Dan has computed the Atlantic Merional Heat transport at 45N - which is consiste
 
 ![AtlHT](assets/Dan_Atl_NHeat_Transport_45n.png)
 
+Which is consistent with the AMOC decline on density levels at 45N from Niamh
+
+![AMOC](assets/Niamh_AMOC_sigma_45N.png)
+
 Ben has calculated the Summer jet latitude, focussed on UK longitudes and smoothed with a 15 year running mean.
 ![Jet](assets/Ben_Winter_jet_Speed.png)
 
