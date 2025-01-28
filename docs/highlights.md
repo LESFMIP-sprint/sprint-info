@@ -32,6 +32,9 @@ Ollie has calculated the RAPID 26.5N diagnostics using an updated version of the
 ![RAPID](assets/Ollie_RAPID_MOC.png)
 ![RAPID](assets/Ollie_RAPID_MHT.png)
 
+Dan has computed the Atlantic Merional Heat transport at 45N - which is consistent with what Ollie's found with the  MHT at 26.5N 
+
+
 
 Ben has calculated the Summer jet latitude, focussed on UK longitudes and smoothed with a 15 year running mean.
 ![Jet](assets/Ben_Winter_jet_Speed.png)
