@@ -32,6 +32,13 @@ Ollie has calculated the RAPID 26.5N diagnostics using an updated version of the
 ![RAPID](assets/Ollie_RAPID_MOC.png)
 ![RAPID](assets/Ollie_RAPID_MHT.png)
 
+
+Ben has calculated the Summer jet latitude, focussed on UK longitudes and smoothed with a 15 year running mean.
+![Jet](assets/Ben_Winter_jet_Speed.png)
+
+And the Winter jet speed, also focussed on UK and smoothed with a 15 year running mean.
+![Jet](assets/Ben_Summer_Jet_lat.png)
+
 ## March 2024
 
 **Day 5**
