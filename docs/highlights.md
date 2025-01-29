@@ -65,6 +65,13 @@ James has produced a nice interactive plot for an SPG index - click on the image
 [<img src="assets/James_SPG_index_interactive.png">](https://noc-msm.github.io/spgi_ts.html)
 
 
+Claire has been comparing the model and obs over the Subpolar Gyre (top) and the Cold Air Outbreak region (bottom):
+![ObsModel](assets/Claire_SPG1.png)
+![ObsModel](assets/Claire_Cold_Air_Outbreak_region.png)
+
+
+
+
 ## March 2024
 
 **Day 5**
