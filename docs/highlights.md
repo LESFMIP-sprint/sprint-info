@@ -48,7 +48,7 @@ Ben has calculated the Summer jet latitude, focussed on UK longitudes and smooth
 ![Jet](assets/Ben_Winter_jet_Speed.png)
 
 And the Winter jet speed, also focussed on UK and smoothed with a 15 year running mean.
-![Jet](assets/Ben_Summer_Jet_lat.png)
+![Jet](assets/Ben_Summer_Jet_lat.png)(https://noc-msm.github.io/spgi_ts.html)
 
 
 **Day 3**
