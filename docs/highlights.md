@@ -50,6 +50,12 @@ Ben has calculated the Summer jet latitude, focussed on UK longitudes and smooth
 And the Winter jet speed, also focussed on UK and smoothed with a 15 year running mean.
 ![Jet](assets/Ben_Summer_Jet_lat.png)
 
+
+**Day 3**
+Holly has been looking at the Subpolar Gyre and the seasonality of the SST.
+
+
+
 ## March 2024
 
 **Day 5**
