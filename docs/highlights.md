@@ -52,7 +52,14 @@ And the Winter jet speed, also focussed on UK and smoothed with a 15 year runnin
 
 
 **Day 3**
+
 Holly has been looking at the Subpolar Gyre and the seasonality of the SST.
+![SPG](assets/Holly_SPG_Ensemble_Mean_SST_seasons_maps.png)
+![SPG](assets/Holly_SPG_Ensemble_Mean_SST_seasons.png)
+![SPG](assets/Holly_SPG_Ensemble_Mean_SST_winter_minus_summer.png)
+![SPG](assets/Holly_SPG_Ensemble.png)
+
+
 
 
 
