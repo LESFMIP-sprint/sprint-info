@@ -62,7 +62,7 @@ Holly has been looking at the Subpolar Gyre and the seasonality of the SST.
 
 James has produced a nice interactive plot for an SPG index - click on the image to try it out!
 
-![SPG](assets/James_SPG_index_interactive.png)(https://noc-msm.github.io/spgi_ts.html)
+![<img src="assets/James_SPG_index_interactive.png">](https://noc-msm.github.io/spgi_ts.html)
 
 
 ## March 2024
