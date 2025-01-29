@@ -48,7 +48,7 @@ Ben has calculated the Summer jet latitude, focussed on UK longitudes and smooth
 ![Jet](assets/Ben_Winter_jet_Speed.png)
 
 And the Winter jet speed, also focussed on UK and smoothed with a 15 year running mean.
-![Jet](assets/Ben_Summer_Jet_lat.png)(https://noc-msm.github.io/spgi_ts.html)
+![Jet](assets/Ben_Summer_Jet_lat.png)
 
 
 **Day 3**
@@ -62,7 +62,7 @@ Holly has been looking at the Subpolar Gyre and the seasonality of the SST.
 
 James has produced a nice interactive plot for an SPG index - click on the image to try it out!
 
-![SPG](assets/James_SPG_index_interactive.png)
+![SPG](assets/James_SPG_index_interactive.png)(https://noc-msm.github.io/spgi_ts.html)
 
 
 ## March 2024
