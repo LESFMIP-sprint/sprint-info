@@ -70,6 +70,9 @@ Claire has been comparing the model and obs over the Subpolar Gyre (top) and the
 ![ObsModel](assets/Claire_Cold_Air_Outbreak_region.png)
 
 
+**Day 4**
+
+
 
 
 ## March 2024
