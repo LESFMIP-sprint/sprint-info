@@ -1,6 +1,18 @@
 # About 
 
-As part of the [CANARI project](https://canari.ac.uk/) (Climate change in the Arctic – North Atlantic region and impacts on the UK) a large ensemble of the HadGEM3 coupled climate model is being run, [CANARI-LE](https://canari.ac.uk/resources_new/tools/).  Following the success of the data analysis sprint in March 2024 a data has been set for a second sprint, the week of January 27-31, 2025.  This page is designed to provide details of the ensemble, information about the [data and how to access it](data.md), [pre-event requirements](setup.md), [sprint](sprint.md), [tutorials](tutorials.md) and [frequently asked questions](FAQ.md).  Highlights from the previous can current sprints can be found on the [highlights](highlights.md) page. 
+The LESFMIP analysis sprint is intended for the LEADER and EPESC communities to encourage active analysis of the LESFMIP simulations and facilitate discussion and collaboration. 
+
+**When: 17-20 March 2025**<br />
+Daily discussion sessions at **12 and 22 pm UTC** on Zoom
+
+**What to do before the Sprint:**
+
+1. Request a JASMIN account and make sure you can access the LEADER-EPESC group workspace
+2. Make sure you have signed up on the spreadsheet! Emails will only be sent to registered participants
+3. Make sure you have been invited and can access the lesfmip-sprint Slack channel (note: invitations yet to be sent out!)
+4. Make sure you have received and can access the Zoom meetings at 12 pm and 22 pm UTC
+
+**Useful links:**
 
 The analysis sprint will take place on JASMIN and be structured as follows: each day of the sprint (Mon-Thurs), there will be two discussion sessions on Zoom at 12pm UTC and 22pm UTC, respectively. These are intended for discussing aims, preliminary sharing of highlight results produced during the sprint, discussing data issues, etc. Attendees will also be encouraged to share figures, discussion items on Slack (TBC, or similar platform), which will be used for informal communication during the sprint.
  
