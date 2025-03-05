@@ -1,13 +1,13 @@
 site_name: CANARI Sprint 
 site_dir: public
 nav:
-  - 'docs/index.md'
-  - 'docs/highlights.md'
-  - 'docs/data.md'
-  - 'docs/setup.md'
-  - 'docs/sprint.md'
-  - 'docs/tutorials.md'
-  - 'docs/FAQ.md'
+  - 'index.md'
+  - 'highlights.md'
+  - 'data.md'
+  - 'setup.md'
+  - 'sprint.md'
+  - 'tutorials.md'
+  - 'FAQ.md'
 plugins:
   - search
   - print-site
