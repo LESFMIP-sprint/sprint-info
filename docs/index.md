@@ -14,7 +14,7 @@ Daily discussion sessions at **12 and 22 pm UTC** on Zoom
 
 **Useful links:**
 
-JASMIN notebook server and instructions 
+JASMIN [notebook](https://notebooks.jasmin.ac.uk) server and [instructions](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/) 
 
 
 ## Publications
