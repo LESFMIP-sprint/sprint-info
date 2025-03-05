@@ -25,4 +25,5 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material mkdocs-print-site-plugin
+      # actual build
       - run: mkdocs gh-deploy --force
