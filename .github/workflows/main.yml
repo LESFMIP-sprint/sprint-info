@@ -6,6 +6,10 @@ on:
 #permissions:
 #  contents: write
 
+defaults:
+  run:
+    shell: bash -l {0}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
