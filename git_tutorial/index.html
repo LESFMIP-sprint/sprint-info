@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Collaborating with Github - LESFMIP Sprint</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../css/print-site-enum-headings1.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings2.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings3.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings4.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings5.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings6.css" rel="stylesheet">
+        <link href="../css/print-site.css" rel="stylesheet">
+        <link href="../css/print-site-mkdocs.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">LESFMIP Sprint</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../highlights/" class="nav-link">Highlights</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#collaborating-with-github" class="nav-link">Collaborating with Github</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#a-quick-background" class="nav-link">A quick background</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#collaborating-with-github_1" class="nav-link">Collaborating with Github</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="collaborating-with-github">Collaborating with Github</h1>
+<h2 id="a-quick-background">A quick background</h2>
+<ul>
+<li>git init - initalise a Git repository</li>
+<li>git add - adds new changes to the staging area</li>
+<li>git commit - commits changes in the staging area to the repository</li>
+<li>git log - show list of commits</li>
+<li>git push - pushes commits to a remote (e.g. github)</li>
+<li>git pull - pulls changes from a remote</li>
+</ul>
+<p><img alt="Diagram illustrating the Git staging area and repository" src="https://noc-oi.github.io/git-novice/fig/git-staging-area.svg" /></p>
+<h2 id="collaborating-with-github_1">Collaborating with Github</h2>
+<p>Github allows multiple people to work on the same code.</p>
+<h3 id="multiple-collaborators-to-one-repository">Multiple Collaborators to One Repository</h3>
+<p>The Owner needs to give the Collaborator access. In your repository page on GitHub, click the "Settings"
+button on the right, select "Collaborators", click "Add people", and
+then enter your partner's username.</p>
+<p><img alt="screenshot of repository page with Settings then Collaborators selected, showing how to add Collaborators in a GitHub repository" src="https://noc-oi.github.io/git-novice/fig/github-add-collaborators.png" /></p>
+<p>To accept access to the Owner's repo, the Collaborator
+needs to go to <a href="https://github.com/notifications">https://github.com/notifications</a>
+or check for email notification. Once there she can accept access to the Owner's repo.</p>
+<p>Next, the Collaborator needs to download a copy of the Owner's repository to her
+machine. This is called "cloning a repo".</p>
+<p>We'll be using a repository with an example script for making some plots of Sea Surface Temperature from the CANARI data.
+You can find this repository at <a href="https://github.com/CANARI-sprint/git-tutorial">https://github.com/CANARI-sprint/git-tutorial</a></p>
+<p>To clone the repo into her <code>Desktop</code> folder, the Collaborator enters:</p>
+<pre><code class="language-bash">$ git clone git@github.com:CANARI-sprint/git-tutorial.git ~/Desktop/git-tutorial
+</code></pre>
+<p>If you choose to clone without the clone path
+(<code>~/Desktop/git-tutorial</code>) specified at the end,
+you will clone inside your own favourite-places folder!
+Make sure to navigate to the <code>Desktop</code> folder first.</p>
+<p><img alt="After Creating Clone of Repository" src="https://noc-oi.github.io/git-novice/fig/github-collaboration.svg" /></p>
+<p>The Collaborator can now make a change in her clone of the Owner's repository:</p>
+<pre><code class="language-bash">$ cd ~/Desktop/git-tutorial
+$ nano basic-plots.py
+</code></pre>
+<p>Change:</p>
+<pre><code class="language-python">cmap = plt.get_cmap('seismic',21)
+</code></pre>
+<p>To:</p>
+<pre><code class="language-python">cmap = plt.get_cmap('bwr',21)
+</code></pre>
+<pre><code class="language-bash">$ git add basic_plots.py
+$ git commit -m &quot;Changing the colourmap&quot;
+</code></pre>
+<pre><code class="language-output"> 1 file changed, 1 insertion(+)
+ create mode 100644 basic_plots.py
+</code></pre>
+<p>Then push the change to the <em>Owner's repository</em> on GitHub:</p>
+<pre><code class="language-bash">$ git push origin main
+</code></pre>
+<pre><code class="language-output">Enumerating objects: 4, done.
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 306 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:CANARI-sprint/git-tutorial.git
+   9272da5..29aba7c  main -&gt; main
+</code></pre>
+<p>Note that we didn't have to create a remote called <code>origin</code>: Git uses this
+name by default when we clone a repository.  (This is why <code>origin</code> was a
+sensible choice earlier when we were setting up remotes by hand.)</p>
+<p>Take a look at the Owner's repository on GitHub again, and you should be
+able to see the new commit made by the Collaborator. You may need to refresh
+your browser to see the new commit.</p>
+<p>To download the Collaborator's changes from GitHub, the Owner now enters:</p>
+<pre><code class="language-bash">$ git pull origin main
+</code></pre>
+<pre><code class="language-output">remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From git@github.com:CANARI-sprint/git-tutorial
+ * branch            main     -&gt; FETCH_HEAD
+   9272da5..29aba7c  main     -&gt; origin/main
+Updating 9272da5..29aba7c
+Fast-forward
+ basic_plots.py | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 basic_plots.py
+</code></pre>
+<p>Now the three repositories (Owner's local, Collaborator's local, and Owner's on
+GitHub) are back in sync.</p>
+<h4 id="triggering-a-merge-conflict">Triggering a Merge Conflict</h4>
+<p>If two more changes are made by doing the following:</p>
+<p>(simultaneously)</p>
+<ul>
+<li>Clone the repository git@github.com:CANARI-sprint/git-tutorial.git (using SSH).</li>
+<li>Edit the colourmap on line 73, choosing one from the <a href="https://matplotlib.org/stable/users/explain/colors/colormaps.html">Matplotlib Documentation</a>.</li>
+<li>Add/Commit this change to your local repository.</li>
+<li>Push your changes to the upstream repository.</li>
+<li>Only the first person to push will be able to get their changes through, the other person will get a merge conflict error since multiple people have edited the same line.</li>
+</ul>
+<h4 id="resolving-a-merge-conflict">Resolving a Merge Conflict</h4>
+<p>As soon as people can work in parallel, they'll likely step on each other's
+toes.  This will even happen with a single person: if we are working on
+a piece of software on both our laptop and a server in the lab, we could make
+different changes to each copy.</p>
+<p>When the second person tries to push changes to Github they will see something like this error:</p>
+<pre><code class="language-output">To git@github.com:CANARI-sprint/git-tutorial.git
+ ! [rejected]        main -&gt; main (fetch first)
+error: failed to push some refs to 'git@github.com:CANARI-sprint/git-tutorial.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+</code></pre>
+<p>Git rejects the push because it detects that the remote repository has new updates that have not been
+incorporated into the local branch.
+What we have to do is pull the changes from GitHub, then into the copy we're currently working in, and then push that.
+Let's start by pulling:</p>
+<pre><code class="language-bash">$ git pull origin main
+</code></pre>
+<pre><code class="language-output">remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From git@github.com:CANARI-sprint/git-tutorial.git
+ * branch            main     -&gt; FETCH_HEAD
+    29aba7c..dabb4c8  main     -&gt; origin/main
+Auto-merging basic_plots.py
+CONFLICT (content): Merge conflict in basic_plots.py
+Automatic merge failed; fix conflicts and then commit the result.
+</code></pre>
+<p>The <code>git pull</code> command updates the local repository to include those
+changes already included in the remote repository.
+After the changes from remote branch have been fetched, Git detects that changes made to the local copy
+overlap with those made to the remote repository, and therefore refuses to merge the two versions to
+stop us from trampling on our previous work. The conflict is marked in
+in the affected file:</p>
+<pre><code class="language-bash">$ cat basic_plots.py
+</code></pre>
+<pre><code class="language-output">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+cmap = plt.get_cmap('seismic',21)
+=======
+cmap = plt.get_cmap('PuOr',21)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; dabb4c8c450e8475aee9b14b4383acc99f42af1d
+</code></pre>
+<p>Our change is preceded by <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>.
+Git has then inserted <code>=======</code> as a separator between the conflicting changes
+and marked the end of the content downloaded from GitHub with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>.
+(The string of letters and digits after that marker
+identifies the commit we've just downloaded.)</p>
+<p>It is now up to us to edit this file to remove these markers
+and reconcile the changes.
+We can do anything we want: keep the change made in the local repository, keep
+the change made in the remote repository, write something new to replace both,
+or get rid of the change entirely.</p>
+<p>To finish merging,
+we add <code>basic_plots.py</code> to the changes being made by the merge
+and then commit:</p>
+<pre><code class="language-bash">$ git add basic_plots.py
+$ git status
+</code></pre>
+<pre><code class="language-output">On branch main
+All conflicts fixed but you are still merging.
+  (use &quot;git commit&quot; to conclude merge)
+
+Changes to be committed:
+
+    modified:   basic_plots.py
+
+</code></pre>
+<pre><code class="language-bash">$ git commit -m &quot;Merge changes from GitHub&quot;
+</code></pre>
+<pre><code class="language-output">[main 2abf2b1] Merge changes from GitHub
+</code></pre>
+<p>Now we can push our changes to GitHub:</p>
+<pre><code class="language-bash">$ git push origin main
+</code></pre>
+<pre><code class="language-output">Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 645 bytes | 645.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To git@github.com:CANARI-sprint/git-tutorial.git
+   dabb4c8..2abf2b1  main -&gt; main
+</code></pre>
+<p>Git keeps track of what we've merged with what,
+so we don't have to fix things by hand again
+when the collaborator who made the first change pulls again:</p>
+<pre><code class="language-bash">$ git pull origin main
+</code></pre>
+<pre><code class="language-output">remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From git@github.com:CANARI-sprint/git-tutorial.git
+ * branch            main     -&gt; FETCH_HEAD
+    dabb4c8..2abf2b1  main     -&gt; origin/main
+Updating dabb4c8..2abf2b1
+Fast-forward
+ basic_plots.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+</code></pre>
+<p>Git's ability to resolve conflicts is very useful, but conflict resolution
+costs time and effort, and can introduce errors if conflicts are not resolved
+correctly. If you find yourself resolving a lot of conflicts in a project,
+consider these technical approaches to reducing them:</p>
+<ul>
+<li>Pull from upstream more frequently, especially before starting new work</li>
+<li>Use topic branches to segregate work, merging to main when complete</li>
+<li>Make smaller more atomic commits</li>
+<li>Push your work when it is done and encourage your team to do the same to reduce work in progress and, by extension, the chance of having conflicts</li>
+<li>Where logically appropriate, break large files into smaller ones so that it is
+  less likely that two authors will alter the same file simultaneously</li>
+</ul>
+<p>Conflicts can also be minimized with project management strategies:</p>
+<ul>
+<li>Clarify who is responsible for what areas with your collaborators</li>
+<li>Discuss what order tasks should be carried out in with your collaborators so
+  that tasks expected to change the same lines won't be worked on simultaneously</li>
+<li>If the conflicts are stylistic churn (e.g. tabs vs. spaces), establish a
+  project convention that is governing and use code style tools (e.g.
+  <code>htmltidy</code>, <code>perltidy</code>, <code>rubocop</code>, etc.) to enforce, if necessary</li>
+</ul>
+<h3 id="pull-requests">Pull Requests</h3>
+<p>As you have seen, multiple people working on the same repository can cause a lot of problems. Github provides another way to collaborate called pull requests. In these each person makes their own copy of the repository on Github, this is known as a fork. Instead of working in the same repository as everyone else, each person works on their own fork. When they are ready to send the changes back to the main repository they create a pull request (literally asking the owner of the repository to do a git pull from theirs). Github wraps this in a nice interface, which allows you to write a comment about what you changed, for the owner to review your changes (and possibly request you make more before they accept it) and for them to finally accept or reject them. Once they are accepted the changes from your fork are merged into the upstream repository. If there are any conflicts then it will be up to the owner of the upstream repository to resolve them.</p>
+<h4 id="pull-requesting-changes">Pull Requesting Changes</h4>
+<ul>
+<li>Create a fork of the favourite-places repository by visiting https://github.com/CANARI-sprint/git-tutorial and clicking on the fork link near the top right hand corner.</li>
+<li>Create an additional change to the basic_plots.py file in the repository.</li>
+<li>Github should now tell you that your fork is "1 commit ahead" of the upstream repository and offer a "Contribute" button to start the pull request.</li>
+<li>Click this and choose "Open Pull Request".</li>
+<li>The next screen will highlight the differences between your version and the upstream one. Go ahead and click "Create pull request".</li>
+<li>The repository owner should now get an alert about your pull request and can choose whether to merge it or not.</li>
+</ul>
+<p>Pull requests are best for larger projects where you want to control or at least review any changes. This does require the project's owners to spend time reviewing any pull requests. 
+Smaller projects where all the developers trust each other might be better suited to allowing multiple people direct write access.</p>
+<h4 id="making-additional-changes-to-a-pull-request">Making additional changes to a Pull Request</h4>
+<ul>
+<li>Create another pull request using the same method as above.</li>
+<li>After submitting the pull request, you decide to make another change either because you found a mistake or the upstream repository owner asked you to fix something.</li>
+<li>Make this change to your fork and push them to github.</li>
+<li>The pull request should automatically update with any additional changes you make.</li>
+</ul>
+<h4 id="pull-requests-in-big-projects">Pull Requests in Big Projects</h4>
+<p>In many large projects all work will be done via pull requests and merging changes back into the main repository will involve a large scale code review process. There may also be autoamted checks involved to stop code which doesn't pass tests (or doesn't have tests) from being merged into a production system.</p>
+<h3 id="summary">Summary</h3>
+<ul>
+<li>Conflicts occur when two or more people change the same lines of the same file.</li>
+<li>The version control system does not allow people to overwrite each other's changes blindly, but highlights conflicts so that they can be resolved.</li>
+<li>Giving many people write access to the same repository can result in a lot of conflicts if they all change the same file(s).</li>
+<li>Pull requests offer a controlled way to share your changes and let the project owner review them.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../js/print-site.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

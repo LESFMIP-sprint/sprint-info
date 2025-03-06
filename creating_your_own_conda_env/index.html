@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Creating your own conda env - LESFMIP Sprint</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../css/print-site-enum-headings1.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings2.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings3.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings4.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings5.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings6.css" rel="stylesheet">
+        <link href="../css/print-site.css" rel="stylesheet">
+        <link href="../css/print-site-mkdocs.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">LESFMIP Sprint</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../highlights/" class="nav-link">Highlights</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#tutorial-3-creating-and-sharing-your-own-condamamba-environment" class="nav-link">Tutorial 3 - Creating and sharing your own conda/mamba environment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="tutorial-3-creating-and-sharing-your-own-condamamba-environment">Tutorial 3 - Creating and sharing your own conda/mamba environment</h2>
+<h3 id="why-create-your-own-environment">Why create your own environment?</h3>
+<p>The provided environment (located in /gws/smf/j04/canari/conda-env) contains many packages you are likely to need, but doesn't contain everything. As this is a shared environment we can't allow everyone to install new packages into it. If you need extra packages you will have to create your own environment.</p>
+<h3 id="creating-an-environment-from-jasmin">Creating an environment from JASMIN</h3>
+<p>If you are running inside terminal on the notebook service you will already have conda (and mamba) in your path. If you are running on a sci server you may need to load the <code>jaspy</code> module by running <code>module load jaspy</code> in order to have the conda/mamba commands in your path.</p>
+<p>It is assumed you have cloned the tutorials Github repository into a directory called tutorials, if you haven't see the "Getting the CANARI example code" section of tutorial 2 (Configuring and Using the JASMIN Notebooks Service). </p>
+<ul>
+<li>In a terminal run the command <code>mamba env create -n canari -f ~/tutorials/environment.yml</code>. We are using the command <code>mamba</code> instead of <code>conda</code>. Mamba is a replacement for conda that can resolve the dependencies for an enviroment much faster. </li>
+<li>This will take about 10 minutes to execute. After it is complete, verify it exists by running: <code>mamba env list</code>, you should see something similar to the following:</li>
+</ul>
+<pre><code># conda environments:
+#
+                         /gws/smf/j04/canari/conda-env
+canari                   /home/users/colinsau/.conda/envs/canari
+</code></pre>
+<ul>
+<li>To make the enviroment visible to Jupyter Lab run ("CANARI-mine" is the name it will show in the Jupyter Launcher, feel free to change this): <code>mamba run -n canari python -m ipykernel install --user --name CANARI-mine</code>.</li>
+<li>After about one minute a new icon called "CANARI-mine" should apear in the Jupyter launcher on the notebook service.</li>
+</ul>
+<h3 id="adding-extra-packages-to-your-environment">Adding extra packages to your environment</h3>
+<h4 id="installing-extra-packages-with-mamba">Installing extra packages with Mamba</h4>
+<p>We can install extra packages in our mamba/conda enviroment by using the <code>mamba install</code> command from a terminal inside the JASMIN notebook service. We need to specify the name of our enviroment with the <code>-n</code> option. If for example we wanted to install plotnine (which creates R ggplot2 style plots in Python) then we could install it by typing: </p>
+<p><code>mamba install -n canari plotnine</code></p>
+<h4 id="installing-extra-packages-with-pip">Installing extra packages with Pip</h4>
+<p>Sometimes packages aren't available via Mamba/Conda but are available via Python's pip package manager. Always try to install via Mamba in the first instance though. To install plotnine using pip run the command:</p>
+<p><code>mamba run -n canari pip install plotnine</code> </p>
+<p>If you already installed plotnine using mamba then this will detect the installation and refuse to install it again. </p>
+<h3 id="sharing-your-enviroment">Sharing your enviroment</h3>
+<p>Now you've added more packages to your enviroment you might want to share your enviroment with somebody else (or yourself on a different computer). Mamba/Conda allows us to export a list of all packages installed in an enviroment with the <code>mamba env export</code> command. An example use of this command is:</p>
+<p><code>mamba env export -n canari --from-history -f new_environment.yml</code></p>
+<ul>
+<li>As with other Mamba commands this takes a <code>-n</code> parameter for the name of the enviroment we're exporting.</li>
+<li>The option <code>--from-history</code> this means that the export will reflect the package versions we specified, for example we might have requested Python version 3.10.12 instead of the exact version we got which might have been something like version 3.10.2=hd12c33a_0_cpython. These overly precise version numbers can cause problems when trying to replicate the enviroment on another computer, especially if it runs a different operating system.</li>
+<li>We can specify an output file with the <code>-f</code> parameter, if this isn't specified then the environment data is displayed on screen.</li>
+<li>The resulting file (new_enviroment.yml) can now be shared with somebody else or added to a git repository.</li>
+<li>To install a new enviroment using this file run the command <code>mamba env create -n canari-new -f new_enviroment.yml</code>. This will create a new enviorment called "canari-new" from the file new_enviroment.yml that we just exported.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../js/print-site.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

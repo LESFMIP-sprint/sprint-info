@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Computing indices with cf-python - LESFMIP Sprint</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../css/print-site-enum-headings1.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings2.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings3.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings4.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings5.css" rel="stylesheet">
+        <link href="../css/print-site-enum-headings6.css" rel="stylesheet">
+        <link href="../css/print-site.css" rel="stylesheet">
+        <link href="../css/print-site-mkdocs.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">LESFMIP Sprint</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../highlights/" class="nav-link">Highlights</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#computing-indices-with-cf-python" class="nav-link">Computing indices with cf-python</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#computing-a-box-average-nao-index" class="nav-link">Computing a box average NAO index</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#computing-a-box-average-index-for-sst" class="nav-link">Computing a box average index for SST</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="computing-indices-with-cf-python">Computing indices with cf-python</h1>
+<p><a href="https://ncas-cms.github.io/cf-python/">cf-python</a> is a python Earth Science data analysis library that is built on a complete implementation of the CF data model. It makes reading, writing and processing of cf netcdf data very simple. This tutorial points to some basic examples for use on the CANARI SPRINT data on JASMIN</p>
+<p>These examples can all be found in <code>/home/users/dlrhodso/CANARI/SPRINT_2024/examples</code>. All sumbit submit multiple jobs in parallel in order to process all ensemble members at once. They use the <code>LOTUS</code> script to do this - this is a wrapper script for the SLURM submission commands that make it very easy to submit jobs and not worry about log files etc.</p>
+<p>All these scripts use the default JASMIN sci JASPY enviromnet (<code>module load jaspy</code>) - but the <code>LOTUS</code> script automatically loads JASPY.</p>
+<h2 id="computing-a-box-average-nao-index">Computing a box average NAO index</h2>
+<p><code>compute_nao.sh</code> loops over all MSLP files in the <code>/gws/nopw/j04/canari/shared/large-ensemble/priority/HIST2</code> directory and uses the <code>compute_nao.py</code> python script to compute the NAO index.</p>
+<pre><code>#!/usr/bin/env python
+
+import cf
+import sys
+import glob
+from origin import *
+
+def get_NAO_djf(field):
+    '''
+    Compute a DJF NAO index by box averaging Azores (20:28W,36:40N) - Iceland (16:25W,63:70N) and averaging over Dec-Jan-Feb
+    '''
+    #assume field== MSLP!
+    #get sub-regions for boxes
+    iceland_box=field.subspace(X=cf.wi(-25,-16),Y=cf.wi(63,70))
+    azores_box=field.subspace(X=cf.wi(-28,-20),Y=cf.wi(36,40))
+    #compute the area means (weighted by cell area) and difference
+    nao=azores_box.collapse('area: mean',weights=True,squeeze=True)-iceland_box.collapse('area: mean', weights=True,squeeze=True)
+    #compute the DJF mean
+    nao_mean=nao.collapse('time: mean',group=cf.djf())
+    #change the name 
+    nao_mean.standard_name='NAO_djf'
+    #And the netcdf name
+    nao_mean.nc_set_variable('NAO_djf')
+    #and the long_name
+    nao_mean.set_properties({'long_name':'NAO_djf'})
+    #return nao index
+    return(nao_mean)
+
+#Atmosphere grid cell area
+areacella='/home/users/dlrhodso/CANARI/SPRINT_2024/analysis/areacella_fx_HadGEM3-GC31-MM_piControl_r1i1p1f1_gn_fixed.nc'
+
+#a tag definining what this index is
+outfile_origin=&quot;DJF NAO index computed as the Azores (20:28W, 36:40N) box mean  minus Iceland (16:25W,63:70N) box mean &quot;
+
+#First argument is scratch directory
+scratch=sys.argv[1]
+#file pattern for the MSLP diagnostic (m01s16i222)
+#Only daily mean MSLP is available
+file=sys.argv[2]+'/ATM/yearly/*/*day_m01s16i222*'
+#expand this pattern
+files=glob.glob(file)
+#create output filename
+outfilename=scratch+'/nao-djf_'+files[0].split('/')[-1]
+
+#read in data, adding in the cell area from the external file
+data=cf.read(file,external=areacella)
+#compute nao index
+nao_djf=get_NAO_djf(data[0])
+
+#write out NAO index with description text
+o_write(nao_djf,outfilename,outfile_origin)
+print(&quot;Written &quot;+outfilename)
+
+</code></pre>
+<p>This script will write the output to <code>scratch_pw3/NAO/</code> as files for each ensemble member</p>
+<h2 id="computing-a-box-average-index-for-sst">Computing a box average index for SST</h2>
+<p><code>compute_SPG_T.sh</code></p>
+<pre><code>#!/usr/bin/env python
+
+import cf
+import sys
+import glob
+from origin import *
+
+def compute_spg(field):
+    '''
+    compute SPG 50:65N 0:60W
+    '''
+    #compute SPG over 50:65N, 0:60W and 1st ocean layer (0:1m)
+    #extract subspace
+    sub_field=field.subspace(latitude=cf.wi(50,65),longitude=cf.wi(-60,0)).squeeze()
+    #compute mean over subspace, weighting by area
+    spg=sub_field.collapse('area: mean', weights='area',squeeze=True)
+    #add names
+    spg.standard_name='sub_polar_gyre_index_50_65N'
+    spg.nc_set_variable('SPG_50_65N')
+    spg.set_properties({'long_name':'sub_polar_gyre_50_60N'})
+
+    return(spg)
+
+
+#ocean cell area file
+areacello=&quot;areacello.nc&quot;
+
+#a tag definining what this index is
+outfile_origin=&quot;SubPolar Gyre Temperaure index computed as the  box mean of  over () box mean &quot;
+
+#First argument is scratch directory
+scratch=sys.argv[1]
+
+#file pattern for the SST diagnostic 
+
+#file to read in
+file=sys.argv[2]
+#file name to write out
+outfilename=sys.argv[3]
+#variable name 
+variable=sys.argv[4]
+
+#expand this pattern
+year,fname=file.split('/')[-2:]
+
+#read in data, adding in the cell area from the external file
+data=cf.read(file,external=areacello)
+if len(data)&gt;1:
+    print(&quot;Aggregation failed!&quot;)
+    exit()
+#axis labels need to be added
+data[0].coord('long_name=cell index along first dimension').axis='X'
+data[0].coord('long_name=cell index along second dimension').axis='Y'
+#compute spg index
+varname=&quot;SPG_&quot;+variable
+index=compute_spg(data[0])
+index.standard_name=varname
+index.nc_set_variable(varname)
+
+#compute the monthly means
+index_monthly=index.collapse('time: mean', group=cf.M())
+index_monthly.standard_name=varname+&quot;_mon&quot;
+index_monthly.nc_set_variable(varname+&quot;_mon&quot;)
+
+#compute the annual means
+index_annual=index.collapse('time: mean', group=cf.Y())
+index_annual.standard_name=varname+&quot;_ann&quot;
+index_annual.nc_set_variable(varname+&quot;_ann&quot;)
+
+outlist=cf.FieldList()
+outlist.append(index)
+outlist.append(index_monthly)
+outlist.append(index_annual)
+
+#write out NAO index with description text
+o_write(outlist,outfilename,outfile_origin)
+print(&quot;Written &quot;+outfilename)
+
+
+</code></pre>
+<p>This produces multiple files in <code>scratch_pw3</code> that need to be assembled into a single file for each ensemble member. <code>concat_SPG_T.sh</code> does this usings <code>concat_cf.py</code>. </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../js/print-site.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
