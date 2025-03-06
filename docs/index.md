@@ -1,6 +1,6 @@
 # About 
 
-The LESFMIP analysis sprint is intended for the LEADER and EPESC communities to encourage active analysis of the LESFMIP simulations and facilitate discussion and collaboration. 
+The LESFMIP analysis sprint is intended for the [LEADER](https://www.aparc-climate.org/activities/leader-large-ensembles-for-attribution-of-dynamically-driven-extremes/) and [EPESC](https://www.wcrp-climate.org/epesc) communities to encourage active analysis of the LESFMIP simulations and facilitate discussion and collaboration. 
 
 **When: 17-20 March 2025**<br />
 Daily discussion sessions at **12 and 22 pm UTC** on Zoom
